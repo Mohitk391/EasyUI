@@ -1,11 +1,12 @@
-@import url(./global-styles/general-layout.css);
+@import url(./general-layout.css);
+@import url(./components/component-styles.css);
 
 html {
-    --blue-background: #93C5FD;
+    --blue-background: #93c5fd;
     --white: #fff;
     --black: #000;
-    --text-primary: #616161;
-    --text-secondary: #111B27;
+    --text-primary: #111B27;
+    --text-secondary:#616161 ;
     --bg-color: #f6f6f6;
     font-family: roboto, sans-serif;
 
@@ -19,6 +20,7 @@ html {
 
 .component_wrapper{
     margin: 2rem;
+    line-height: 1.5rem;
 }
 
 .flex {
@@ -59,8 +61,3 @@ html {
     text-align: center;
 }
 
-.wrapper_avatar {
-    align-items: flex-end;
-    gap: 2rem;
-    flex-wrap: wrap;
-}

@@ -12,10 +12,17 @@
     top: 0;
     font-family: roboto, sans-serif;
     font-size: 1rem;
+    position:sticky;
 }
+.sidebar-heading{
+    padding: 1rem 0rem;
+    text-align: start;
+}
+
 .sidebar-item{
     list-style: none;
     padding: 1rem;
+    
 }
 
 .component-link{
