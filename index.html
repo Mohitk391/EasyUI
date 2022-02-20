@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <a class="nav-bar-logo" href="#">EASY UI</a>
+        <a class="nav-bar-logo" href="index.html">EASY UI</a>
         <a class="social-link" href="#"><img src="/assets/github-icon.svg" alt="twitter"></a>
         <a class="social-link" href="#"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
     </nav>
@@ -28,7 +28,7 @@
                     <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="component-link" href="#">Badge</a>
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
                 </li>
                 <li class="sidebar-item">
                     <a class="component-link" href="#">Button</a>
@@ -93,11 +93,16 @@
                 <h2 class="component_heading">Alert</h2>
                 <p>
                     The alert component has basic 4 types,
-                    <span class="component_description_highlight">alert-success</span>, 
-                    <span class="component_description_highlight">alert-danger</span>,
-                    <span class="component_description_highlight">alert-info</span>,
-                    <span class="component_description_highlight">alert-warning</span>, 
-                    and 2 additional basic types <span class="component_description_highlight">alert-primary</span> and <span class="component_description_highlight">alert-secondary</span>.
+                    <span class="component_description
+                    ">alert-success</span>, 
+                    <span class="component_description
+                    ">alert-danger</span>,
+                    <span class="component_description
+                    ">alert-info</span>,
+                    <span class="component_description
+                    ">alert-warning</span>, 
+                    and 2 additional basic types <span class="component_description
+                    ">alert-primary</span> and <span class="component_description_highlight">alert-secondary</span>.
                 </p>
                 <h3 class="component_heading">Standard Alerts</h3>
                 <div class="component_wrapper_box">
@@ -116,6 +121,48 @@
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=173%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%253Cstrong%253EPrimary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520%250A%2520this%2520primary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%253Cstrong%253ESecondary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520secondary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%253Cstrong%253ESuccess%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520success%2520message%21%21%253C%252Fdiv%253E"
                         style="width: 800px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+<!--  Badge  -->
+            <div class="component_wrapper">
+                <h2 class="component_heading">Badge</h2>
+                <p>
+                    The badge component has basic 4 types,
+                    <span class="component_description">badge-avatar-large</span>, 
+                    <span class="component_description">badge-avatar-medium</span>,
+                    <span class="component_description">badge-avatar-small</span>,
+                    <span class="component_description">badge-icon-small</span>,
+                    and 2 status, <span class="component_description">online</span> and <span class="component_description">offline</span>.
+                </p>
+                <h3 class="component_heading">Standar Badges</h3>
+                <div class="component_wrapper_box">
+                    <div class="avatar_flex flex">
+                        <span class="avatar avatar-xl">
+                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                            <div class="badge-avatar-large online round"></div>
+                        </span>
+                        <span class="avatar avatar-lg">
+                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/> 
+                            <div class="badge-avatar-medium offline round"></div>
+                        </span>
+                        <span class="avatar avatar-md">
+                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                            <div class="badge-avatar-small online sqaure"></div>
+                        </span>
+                        <span class="badge-container">
+                            <img src="/assets/shopping-cart-icon.svg" alt="shopping cart" class="badge-icon-small"/>
+                            <span class="badge badge-text">2</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-large%2520online%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522round%2522%252F%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-medium%2520offline%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522square%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-small%2520online%2520sqaure%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522badge-icon-small%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-text%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
+                        style="width: 800px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
