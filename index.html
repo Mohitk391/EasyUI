@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
     <title>Easy UI</title>
 </head>
 <body>
-    <h1> Easy UI</h1>
+    <nav class="nav-bar">
+        <a class="nav-bar-logo" href="#">EASY UI</a>
+        <a class="social-link" href="#"><img src="/assets/github-icon.svg" alt="twitter"></a>
+        <a class="social-link" href="#"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
+    </nav>
+
+<!-- Sidebar  -->    
+    <main class="grid-container">
+        <div class="sidebar">
+            <h3 class="sidebar-heading">Components</h3>
+            <ul>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="#">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="#">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="#">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="#">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="#">Input</a>
+                </li>
+            </ul>
+        </div>
+
+<!--  Avatar  -->
+        <div class="component_wrapper">
+            <h2 class="component_heading">Avatar</h2>
+            <p>
+                The avatar component has basic 5 sizes,
+                <span class="component_description_highlight">avatar-xl</span>, 
+                <span class="component_description_highlight">avatar-lg</span>,
+                <span class="component_description_highlight">avatar-md</span>,
+                <span class="component_description_highlight">avatar-sm</span>,
+                <span class="component_description_highlight">avatar-xs</span>, 
+                and by using <span class="component_description_highlight">round</span> we can have round avatars and <span class="component_description_highlight">square</span> for square avatars.
+            </p>
+            <h3 class="component_heading">Standard Avatars</h3>
+            <div class="component_wrapper_box">
+                <div class="wrapper_avatar flex">
+                    <span class="avatar avatar-xl">
+                        <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                    </span>
+                    <span class="avatar avatar-lg">
+                        <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                    </span>
+                    <span class="avatar avatar-md">
+                        <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                    </span>
+                    <span class="avatar avatar-sm">
+                        <img src="/assets/avatar_sample.jpg" alt="avatar" class="square"/>
+                    </span>
+                    <span class="avatar avatar-xs">
+                        <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="component_iframe">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
+                    style="width: 800px; height: 326px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
