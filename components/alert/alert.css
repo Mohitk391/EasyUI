@@ -1,0 +1,43 @@
+.alert {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-left: 3px solid;
+    border-radius: 1rem;
+}
+
+.alert-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-primary {
+    background-color:  #b2d3f7;
+    color: var(--text-primary);
+}
+
+.alert-secondary {
+    background-color:  #bab6b6;
+    color: gray;
+}
+
+.alert-success {
+    background-color:  #b2f7b8;
+    color: green;
+}
+
+.alert-danger {
+    background-color:  #f78080;
+    color: rgb(255, 42, 42);
+}
+
+.alert-info {
+    background-color:  #cfdae6;
+    color: blue;
+}
+
+.alert-warning {
+    background-color:  #eaf7b2;
+    color: rgb(129, 173, 41);
+}
+
