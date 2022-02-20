@@ -4,18 +4,16 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas:
-        ".nav-bar .nav-bar"
-        "sidebar .components";
+        "nav-bar nav-bar"
+        "sidebar components";
 }
 
 .sidebar {
-    /* padding : 0 1rem; */
     border-right: 1px solid black;
     height: 100%;
     top: 0;
     font-family: roboto, sans-serif;
     font-size: 1rem;
-    position: -webkit-sticky;
     position: sticky;
     top: 20px;
 }
@@ -52,7 +50,7 @@
 }
 
 .nav-bar {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
     background-color: var(--blue-background);
     width: 100vw;
     margin-bottom: 0.5rem;
@@ -66,21 +64,21 @@
 .nav-bar-logo{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    padding: 0rem 1.5rem; 
+    padding: 0 1.5rem; 
 }
 
 .social-link {
     float: right;
-    padding:0rem 1rem;
+    padding: 0 1rem;
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
     .grid-container{
         grid-template-columns: 100vw;
         grid-template-areas:
-        ".nav-bar"
+        "nav-bar"
         "sidebar"
-        ".components";
+        "components";
     }
     .sidebar {
         position: static;

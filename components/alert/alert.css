@@ -1,7 +1,7 @@
 .alert {
     position: relative;
     padding: 1rem;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     border-left: 3px solid;
     border-radius: 1rem;
 }
@@ -12,32 +12,40 @@
 }
 
 .alert-primary {
-    background-color:  #b2d3f7;
+    background-color:  var(--bg-primary);
     color: var(--text-primary);
 }
 
 .alert-secondary {
-    background-color:  #bab6b6;
+    background-color:  var(--bg-secondary);
     color: gray;
 }
 
 .alert-success {
-    background-color:  #b2f7b8;
+    background-color: var(--bg-success); 
     color: green;
 }
 
 .alert-danger {
-    background-color:  #f78080;
-    color: rgb(255, 42, 42);
+    background-color: var(--bg-danger); 
+    color: var(--text-danger);
 }
 
 .alert-info {
-    background-color:  #cfdae6;
+    background-color: var(--bg-info); 
     color: blue;
 }
 
 .alert-warning {
-    background-color:  #eaf7b2;
-    color: rgb(129, 173, 41);
+    background-color: var(--bg-warning);
+    color: var(--text-warning);
+}
+
+.alert-iframe{
+    width: 50rem; 
+    height: 13.125rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
 }
 

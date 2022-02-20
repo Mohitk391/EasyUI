@@ -5,10 +5,22 @@ html {
     --blue-background: #93c5fd;
     --white: #fff;
     --black: #000;
+    --bg-highlight: #d6f3ee;
     --text-primary: #111B27;
     --text-secondary:#616161 ;
     --bg-color-hover: #dfdede;
     --bg-color: #f6f6f6;
+    --bg-primary: #b2d3f7;
+    --bg-secondary: #bab6b6;
+    --bg-success: #b2f7b8;
+    --bg-danger: #f78080;
+    --text-danger: #ff2a2a;
+    --bg-info: #cfdae6;
+    --bg-warning: #eaf7b2;
+    --text-warning: #81ad29;
+    --bg-badge: #f81010;
+    --bg-online: rgb(64, 206, 64);
+    --bg-offline: #e42727;
     font-family: roboto, sans-serif;
 
     scroll-behavior: smooth;
@@ -17,6 +29,7 @@ html {
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 .component_wrapper{
@@ -49,7 +62,7 @@ html {
 }
 
 .component_description{
-    background-color: #d6f3ee;
+    background-color: var(--bg-highlight);
     border-radius: 4px;
     padding: 0.1rem;
     color: var(--black);
