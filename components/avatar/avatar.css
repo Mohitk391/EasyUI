@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.avatar_flex {
+    align-items: flex-end;
+    gap: 2rem;
+    flex-flow: row wrap;
+}
 
 img{
     height: 100%;
