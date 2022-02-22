@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy UI / Modal</title>
+    <link href="modal.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a class="nav-bar-logo" href="index.html">EASY UI</a>
+        <a class="social-link" href="#"><img src="/assets/github-icon.svg" alt="twitter"></a>
+        <a class="social-link" href="#"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
+    </nav>
+    <main class="grid-container">
+<!--   Sidebar start  -->        
+        <aside class="sidebar">
+            <h3 class="sidebar-heading">Components</h3>
+            <ul>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/card/card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/image/image.html">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/input/input.html">Input</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/list/list.html">List</a>
+                </li>
+                <li class="sidebar-item sidebar-item-active">
+                    <a class="component-link" href="/components/modal/modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/rating/rating.html">Rating</a>
+                </li>
+            </ul>
+        </aside>
+<!--   Sidebar end-->
+<!--   Modal start-->
+        <div class="components">
+            <div  class="component_wrapper ">
+                <h2 class="component_heading">Modal</h2>
+
+                <div class="component_wrapper_box flex-center ">
+                    <div >
+                        <button id="openModal" class="btn btn-round">Toggle Modal</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-box">
+                                <div class="modal-content">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Ducimus amet, adipisci sit placeat ipsam fugit quis ut ad illo
+                                        omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
+                                    </p>
+                                    <button id="closeModal" class="btn btn-primary btn-modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cbutton%2520id%253D%2522openModal%2522%2520class%253D%2522btn%2520btn-round%2522%253EToggle%2520Modal%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-primary%2520btn-modal%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        class="modal-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="modal.js" ></script>
+</body>
+</html>
