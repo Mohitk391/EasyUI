@@ -227,7 +227,7 @@
                         <div class="button-flex flex">
                             <button class="btn btn-outline-primary">Primary</button>
                             <button class="btn btn-outline-round">Rounded </button>
-                            <button class="btn btn-outline-icon"><img src="/assets/arrow_right_alt_icon.svg" alt="forward-arrow"/></button>
+                            <button class="btn btn-outline-icon"><img src="/assets/arrow_forward_icon.svg" alt="forward-arrow"/></button>
                             <button class="btn btn-outline-hover">Hover</button>
                             <button class="btn btn-outline-disabled">Disabled</button>
                         </div>
@@ -518,7 +518,206 @@
                     </iframe>
                 </div>
             </div>
+    <!-- Input -->
+            <div class="component_wrapper">
+                <h2 class="component_heading">Input</h2>
+                <p>The input is basically of 2 types,
+                    <span class="component_description">Textbox Input</span> and 
+                    <span class="component_description">Input box input</span> 
+                </p>
+                <h3 class="component_heading">Textbox Input</h3>
+                <div class="component_wrapper_box flex-center">
+                    <form>
+                        <textarea class="textarea" name="textarea" cols="30" rows="10" placeholder="We can add more information here as compared to simple text input."  minlength="10" required></textarea>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522textarea%2522%2520name%253D%2522textarea%2522%2520cols%253D%252230%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522We%2520can%2520add%2520more%2520information%2520here%2520as%2520compared%2520to%2520simple%2520text%2520input.%2522%2520%2520minlength%253D%252210%2522%2520required%253E%253C%252Ftextarea%253E"
+                        class="input-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3 class="component_heading">Input box</h3>
+                <div class="component_wrapper_box flex flex-column flex-center">
+                    <div><label>Normal Input: </label><input class="input" type="text"/></div>
+                    <div><label>Input Error: </label><input class="input-error" type="text" /></div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Clabel%253ENormal%2520Input%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2522%2520type%253D%2522text%2522%252F%253E%250A%253Clabel%253EInput%2520Error%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2520input-error%2522%2520type%253D%2522text%2522%2520%252F%253E"
+                        class="input-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+                </div>
+            </div>
+    <!-- List -->
+            <div class="component_wrapper">
+                <h2 class="component_heading">List</h2>
+                <p>The list is basically of 2 types,
+                    <span class="component_description">Basic lists</span> and 
+                    <span class="component_description">Stacked lists</span> 
+                </p>
+                <h3 class="component_heading">Basic Lists</h3>
+                <div class="component_wrapper_box flex  flex-center flex-list">
+                    <ul>
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                    <ul class="list-circle">
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-circle%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe";
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3 class="component_heading">List with checkbox & Radio</h3>
+                <div class="component_wrapper_box flex  flex-center flex-list">
+                    <ul class="list-none">
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 3</label>
+                        </li>
+                    </ul>
+
+                    <ul class="list-none">
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item1">
+                            <label for="radio-list-item1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item2">
+                            <label for="radio-list-item2">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item3">
+                            <label for="radio-list-item3">Item 3</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item2%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item3%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%253C%252Ful%253E%250A%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe-2"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3 class="component_heading">Stacked List</h3>
+                <div class="component_wrapper_box flex flex-column flex-center">
+                    <ul class="list-none">
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-stack%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+        <!--Modal-->
+            <div  class="component_wrapper ">
+                <h2 class="component_heading">Modal</h2>
+
+                <div class="component_wrapper_box flex-center ">
+                    <div >
+                        <button id="openModal" class="btn btn-round">Toggle Modal</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-box">
+                                <div class="modal-content">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Ducimus amet, adipisci sit placeat ipsam fugit quis ut ad illo
+                                        omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
+                                    </p>
+                                    <button id="closeModal" class="btn btn-primary btn-modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cbutton%2520id%253D%2522openModal%2522%2520class%253D%2522btn%2520btn-round%2522%253EToggle%2520Modal%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-primary%2520btn-modal%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        class="modal-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <script src="./components/modal/modal.js" ></script>
+            </div>
+        <!--Rating-->
+            <div class="component_wrapper">
+                <h2 class="component_heading">Rating</h2>
+                <p>A star rating is a popular rating scale used to leave feedback regarding the quality of products, services, and experiences. 
+                </p>
+                <div class="component_wrapper_box">
+                    <div class="rating flex">
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label> 
+                    </div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520flex%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rate%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star1%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rate%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star2%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rate%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star3%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rate%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star4%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rate%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star5%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%2520%250A%253C%252Fdiv%253E"
+                        class="rating-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            </div>
         </div>
     </main>
+    
 </body>
 </html>

@@ -1,0 +1,44 @@
+.rating{
+    position: relative;
+    width: 30rem;
+    flex-direction: row-reverse;
+}
+.rating input {
+        display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: var(--bg-secondary);
+}
+
+.rating :not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:1.875rem;
+    color: var(--off-white);
+}    
+
+.rating label::before {
+    content: '\2606';
+}
+
+.rating input:checked ~ label::before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label {
+    color: #ffc700;    
+}
+
+.rating-iframe{
+    width: 50rem; 
+    height: 21.875rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+

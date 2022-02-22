@@ -23,6 +23,9 @@ html {
     --bg-badge: #f81010;
     --bg-online: rgb(64, 206, 64);
     --bg-offline: #e42727;
+    --bg-border: #888888;
+    --bg-modal: #fefefe ;
+    --black-modal: rgba(0,0,0,0.4);
     font-family: roboto, sans-serif;
 
     scroll-behavior: smooth;

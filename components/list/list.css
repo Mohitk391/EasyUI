@@ -1,0 +1,40 @@
+.flex-list{
+    gap: 2rem;
+}
+
+.list-circle{
+    list-style-type: circle;
+}
+
+.list-none{
+    list-style: none;
+}
+
+.list-check label{
+    color: var(--black);
+}
+.stack-item{
+    border: 1px solid var(--bg-secondary);
+    margin-bottom: 0.3rem;
+    padding: 0 1rem;    
+}
+
+.stack-item a{
+    margin:0;
+}
+
+.list-iframe{
+    width: 50rem; 
+    height: 27.5rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+
+.list-iframe-2{
+    width: 50rem; 
+    height: 50rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
