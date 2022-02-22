@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy UI / List</title>
+    <link href="list.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a class="nav-bar-logo" href="index.html">EASY UI</a>
+        <a class="social-link" href="#"><img src="/assets/github-icon.svg" alt="twitter"></a>
+        <a class="social-link" href="#"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
+    </nav>
+    <main class="grid-container">
+<!--   Sidebar start  -->        
+        <aside class="sidebar">
+            <h3 class="sidebar-heading">Components</h3>
+            <ul>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/card/card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/image/image.html">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/input/input.html">Input</a>
+                </li>
+                <li class="sidebar-item sidebar-item-active">
+                    <a class="component-link" href="/components/list/list.html">List</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/modal/modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/rating/rating.html">Rating</a>
+                </li>
+            </ul>
+        </aside>
+<!--   Sidebar end-->
+<!--   List start-->
+        <div class="components">
+            <div class="component_wrapper">
+                <h2 class="component_heading">List</h2>
+                <p>The list is basically of 2 types,
+                    <span class="component_description">Basic lists</span> and 
+                    <span class="component_description">Stacked lists</span> 
+                </p>
+                <h3 class="component_heading">Basic Lists</h3>
+                <div class="component_wrapper_box flex  flex-center flex-list">
+                    <ul>
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                    <ul class="list-circle">
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li>Item-1</li>
+                        <li>Item-2</li>
+                        <li>Item-3</li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-circle%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe";
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3 class="component_heading">List with checkbox & Radio</h3>
+                <div class="component_wrapper_box flex  flex-center flex-list">
+                    <ul class="list-none">
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="checkbox-list-item1">
+                            <label for="checkbox-list-item1">Item 3</label>
+                        </li>
+                    </ul>
+
+                    <ul class="list-none">
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item1">
+                            <label for="radio-list-item1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item2">
+                            <label for="radio-list-item2">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="radio-list-item3">
+                            <label for="radio-list-item3">Item 3</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item2%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item3%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%253C%252Ful%253E%250A%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe-2"
+                        sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+
+                <h3 class="component_heading">Stacked List</h3>
+                <div class="component_wrapper_box flex flex-column flex-center">
+                    <ul class="list-stack">
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                        <li class="stack-item flex flex-center">
+                            <p class="list-item-content">Click the link</p>
+                            <a class="btn btn-link" href="">view</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-stack%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        class="list-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
