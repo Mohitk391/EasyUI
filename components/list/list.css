@@ -9,10 +9,7 @@
 .list-none{
     list-style: none;
 }
-.list-stack{
-    list-style: none;
 
-}
 
 .stack-item{
     border: 1px solid var(--bg-secondary);
