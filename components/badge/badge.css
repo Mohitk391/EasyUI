@@ -33,7 +33,7 @@
     background-color: var(--bg-offline);
 }
 
-.badge_avatar_large{
+.badge-avatar-large{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -42,7 +42,7 @@
     border: 6px solid var(--white);
 } 
 
-.badge_avatar_medium{
+.badge-avatar-medium{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -51,7 +51,7 @@
     border: 4px solid var(--white);
 }
 
-.badge_avatar_small{
+.badge-avatar-small{
     position: absolute;
     bottom: 0;
     right: 0;
