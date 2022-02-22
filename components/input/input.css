@@ -1,0 +1,31 @@
+.textarea{
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.input{
+    height: 2rem;
+    width: 20rem;
+    border: 1px solid var(--text-secondary);
+}
+
+.input:focus{
+    border: 1px solid var(--text-primary);
+}
+
+.input-error{
+    border: 1px solid var(--bg-danger);
+}
+
+label{
+    color: var(--bg-secondary);
+}
+
+.input-iframe{
+    width: 50rem; 
+    height: 9.188rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}

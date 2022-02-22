@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy UI / Input</title>
+    <link href="input.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a class="nav-bar-logo" href="index.html">EASY UI</a>
+        <a class="social-link" href="#"><img src="/assets/github-icon.svg" alt="twitter"></a>
+        <a class="social-link" href="#"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
+    </nav>
+    <main class="grid-container">
+<!--   Sidebar start  -->        
+        <aside class="sidebar">
+            <h3 class="sidebar-heading">Components</h3>
+            <ul>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/card/card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/image/image.html">Image</a>
+                </li>
+                <li class="sidebar-item sidebar-item-active">
+                    <a class="component-link" href="/components/input/input.html">Input</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/list/list.html">List</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/modal/modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/rating/rating.html">Rating</a>
+                </li>
+            </ul>
+        </aside>
+<!--   Sidebar end-->
+<!--   Input start-->
+        <div class="components">
+            <div class="component_wrapper">
+                <h2 class="component_heading">Input</h2>
+                <p>The input is basically of 2 types,
+                    <span class="component_description">Textbox Input</span> and 
+                    <span class="component_description">Input box input</span> 
+                </p>
+                <h3 class="component_heading">Textbox Input</h3>
+                <div class="component_wrapper_box flex-center">
+                    <form>
+                        <textarea class="textarea" name="textarea" cols="30" rows="10" placeholder="We can add more information here as compared to simple text input."  minlength="10" required></textarea>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522textarea%2522%2520name%253D%2522textarea%2522%2520cols%253D%252230%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522We%2520can%2520add%2520more%2520information%2520here%2520as%2520compared%2520to%2520simple%2520text%2520input.%2522%2520%2520minlength%253D%252210%2522%2520required%253E%253C%252Ftextarea%253E"
+                        class="input-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3 class="component_heading">Input box</h3>
+                <div class="component_wrapper_box flex flex-column flex-center">
+                    <div><label>Normal Input: </label><input class="input" type="text"/></div>
+                    <div><label>Input Error: </label><input class="input input-error" type="text" /></div>
+                </div>
+
+                <div class="component_iframe">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Clabel%253ENormal%2520Input%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2522%2520type%253D%2522text%2522%252F%253E%250A%253Clabel%253EInput%2520Error%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2520input-error%2522%2520type%253D%2522text%2522%2520%252F%253E"
+                        class="input-iframe"
+                        sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
