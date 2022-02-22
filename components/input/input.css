@@ -19,6 +19,10 @@
     width: 20rem;
     border: 1px solid var(--bg-danger);
 }
+.input-error:focus{
+    border: 1px solid var(--bg-danger);
+}
+
 
 label{
     color: var(--bg-secondary);
