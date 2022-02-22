@@ -1,0 +1,17 @@
+.reponsive-image {
+    display: flex;
+}
+
+.round-image{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.image-iframe{
+    width: 50rem; 
+    height: 6.125rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}

@@ -1,0 +1,131 @@
+.btn-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.btn {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-primary{
+    border-style: none;
+    background-color: var(--bg-primary);
+    color: var(--black);
+}
+
+.btn-secondary{
+    border-style: none;
+    background-color: var(--bg-secondary);
+    color: var(--black);
+}
+
+.btn-round {
+    border-radius: 1rem;
+    border-style: none;
+    background-color: var(--bg-danger);
+}
+
+.btn-link {
+    border: none;
+    color: var(--blue);
+    text-decoration: underline;
+    background-color:  var(--bg-color);
+}
+.btn-hover{
+    border: none;
+    background-color: var(--bg-highlight);
+}
+
+.btn-hover:hover {
+    background-color: var(--bg-color-hover);
+}
+
+.btn-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-outline-primary{
+    border: 2px solid var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.btn-outline-round {
+    border: 2px solid var(--bg-warning);
+    border-radius: 1rem;
+    color: var(--text-warning);
+}
+
+.btn-outline-icon{
+    border: 2px solid var(--bg-danger);
+    color: var(--text-danger);
+}
+
+.btn-outline-hover{
+    border: 2px solid var(--bg-info);
+    color: var(--text-secondary);
+}
+.btn-outline-hover:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.btn-outline-disabled {
+    border: 2px solid var(--blue-background);
+    cursor: not-allowed;    
+}
+
+.btn-floating-action{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; 
+    border-style: none;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    aspect-ratio: 1;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-floating-action img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.btn-floating-action:hover{
+transition: 0.2s ease;
+box-shadow: 0 6px 10px 0 #929191;
+}
+
+.btn-icon {
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: fit-content;
+    display: flex; 
+    align-items: center;
+    gap: 0.4rem;
+    background-color: var(--bg-info);
+    border-style: none;
+    color: var(--black);
+}
+.btn-icon img {
+    display: inline;
+    width: 1.75rem;
+}
+
+.button-iframe {
+    width: 50rem; 
+    height: 12.25rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+
+.btn-icon-iframe{
+    height: 14.25rem;
+}

@@ -1,0 +1,194 @@
+.card-description {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.card-flex {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-horizontal{
+    flex-flow: column wrap;
+    gap: 1rem;
+    min-width: 70vw;
+    height: 15rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    overflow: hidden;
+    object-fit: fill;
+    width: 25rem;
+    border: 1px solid var(--off-white);
+    border-radius: 5px;
+    
+}
+
+.card-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image{
+    position: relative;
+}
+
+.image img {
+    height: 15rem;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.image-horizontal img {
+    height: max-height;
+    width: max-width;
+    background-repeat: no-repeat;
+    
+}
+
+.card-badge{
+    display: inline;
+    position: absolute;
+    background-color: var(--bg-badge);
+    top: 1rem;
+    left: 21.5rem;
+    padding: 0 0.5rem;
+    color: var(--white);
+    border-radius: 20%;
+}
+
+.card-badge-icon img{
+    width: 2rem;
+    height: 2.5rem;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    opacity: 0.7;
+    top: 1rem;
+    left: 21.5rem;
+    padding: 0 0.5rem;
+    color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-badge-icon img:hover{
+    opacity: 0.9;
+}
+
+.card-content{
+    padding: 1.5rem;
+}
+
+.card-content-horizontal {
+    max-width: 60%;
+    margin: 1rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-sub-title{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.content {
+    margin-top: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer {
+    margin-top: 1rem;
+    gap: 2rem;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+.card-footer-icons{
+    width: 8rem;
+    justify-content: space-between;
+}
+
+.icon-img-container img{
+    display: inline;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.card-footer-icons img:hover{
+    background-color: var(--bg-secondary);
+}
+
+.card-footer-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-button-accept{
+    background-color: var(--bg-color);
+    border:1px solid var(--text-secondary);
+    border-radius: 1rem;
+    width: 7rem;
+}
+
+.card-button-accept:hover{
+    background-color: var(--text-primary);
+    color: var(--white); 
+}
+
+.card-button-dismiss{
+    background-color: var(--text-primary);
+    color: var(--white);    
+    border: none;
+    border-radius: 1rem;
+    width: 7rem;
+}
+
+.card-button-dismiss:hover{
+    background-color: var(--bg-color-hover);
+    color: var(--black);
+}
+
+.card-footer-buttons-horizontal{
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.card-footer-buttons button{
+    position: relative;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.image-text-overlay{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    text-align: left;
+}
+
+.image-text-overlay img{
+    opacity: 0.6;
+}
+
+.image-text-overlay div{
+    position:relative;
+    bottom: 1.5rem;
+    left: 1rem; 
+    color: var(--black);
+}
+
+.card-iframe{
+    width: 50rem; 
+    height: 33.625rem;
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
