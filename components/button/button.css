@@ -31,7 +31,7 @@
 
 .btn-link {
     border: none;
-    color: blue;
+    color: var(--blue);
     text-decoration: underline;
     background-color:  var(--bg-color);
 }

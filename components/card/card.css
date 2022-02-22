@@ -21,7 +21,7 @@
     overflow: hidden;
     object-fit: fill;
     width: 25rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--off-white);
     border-radius: 5px;
     
 }
@@ -41,8 +41,8 @@
 }
 
 .image-horizontal img {
-    height: 20rem;
-    width: 15rem;
+    height: max-height;
+    width: max-width;
     background-repeat: no-repeat;
     
 }
@@ -183,4 +183,12 @@
     bottom: 1.5rem;
     left: 1rem; 
     color: var(--black);
+}
+
+.card-iframe{
+    width: 50rem; 
+    height: 33.625rem;
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
 }
