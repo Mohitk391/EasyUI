@@ -1,10 +1,9 @@
 .rating{
     position: relative;
-    width: 30rem;
     flex-direction: row-reverse;
 }
 .rating input {
-        display: none;
+    display: none;
 }
 
 .rating label {
@@ -41,4 +40,3 @@
     transform: scale(1); 
     overflow:hidden;
 }
-
