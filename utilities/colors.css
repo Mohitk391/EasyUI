@@ -1,0 +1,30 @@
+html {
+    --blue-background: #93c5fd;
+    --white: #fff;
+    --black: #000;
+    --off-white: #ccc;
+    --bg-highlight: #d6f3ee;
+    --text-primary: #111B27;
+    --text-secondary:#616161;
+    --text-success:  #008000;
+    --text-danger: #ff2a2a;
+    --text-info: #0000ff;
+    --text-warning: #81ad29;
+    --bg-color-hover: #dfdede;
+    --bg-color: #f6f6f6;
+    --bg-primary: #b2d3f7;
+    --bg-secondary: #dbd7d7;
+    --bg-success: #b2f7b8;
+    --bg-danger: #f78080;
+    --bg-info: #cfdae6;
+    --bg-warning: #eaf7b2;
+    --bg-badge: #f81010;
+    --bg-online: #40ce40;
+    --bg-offline: #e42727;
+    --bg-border: #888888;
+    --bg-modal: #fefefe ;
+    --black-modal: #00000066;
+    --shadow-black: #0000001a;
+    --box-shadow: #929191;
+    --iframe-bg: #011627;
+}
