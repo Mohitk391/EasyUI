@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy UI / Button</title>
-    <link href="button.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
     <link href="/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="nav-bar-logo" href="/index.html">EASY UI</a>
-        <a class="social-link" href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><img src="/assets/github-icon.svg" alt="github"></a>
-        <a class="social-link" href="https://twitter.com/MohitPa88351529"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
-    </nav>
-    <main class="grid-container">
-<!--   Sidebar start  -->        
-        <aside class="sidebar">
-            <h3 class="sidebar-heading">Components</h3>
+    <div class="page-layout">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">EASY UI</a>
+            <div class="external-links">
+                <a href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <div class="main-body">
+            <aside class="sidebar">
+                <h3 class="sidebar-heading">Components</h3>
             <ul>
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/alert/alert.html">Alert</a>
@@ -28,8 +30,8 @@
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/badge/badge.html">Badge</a>
                 </li>
-                <li class="sidebar-item">
-                    <a class="component-link  sidebar-item-active" href="/components/button/button.html">Button</a>
+                <li class="sidebar-item sidebar-item-active">
+                    <a class="component-link" href="/components/button/button.html">Button</a>
                 </li>
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/card/card.html">Card</a>
@@ -50,95 +52,94 @@
                     <a class="component-link" href="/components/rating/rating.html">Rating</a>
                 </li>
             </ul>
-        </aside>
-<!--   Sidebar end-->
-<!--   Button start-->
-        <div class="components">
-            <!-- First Part-->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Button</h2>
-                <p>
-                    The Button component has basic 2 types,
-                    <span class="component_description">solid buttons</span> and 
-                    <span class="component_description">outlined buttons</span>.
-                </p>
-                <h3 class="component_heading">Solid Buttons</h3>
-                <p>
-                    The Solid button components has basic 5 types,
-                    <span class="component_description">btn-primary</span>,  
-                    <span class="component_description">btn-round</span>, 
-                    <span class="component_description">btn-link</span>, 
-                    <span class="component_description">btn-hover</span>, 
-                    <span class="component_description">btn-disabled</span>.
-                </p>
-                <div class="component_wrapper_box">
-                    <div class="button-flex flex">
-                        <button class="btn btn-primary">Primary</button>
-                        <button class="btn btn-round">Rounded </button>
-                        <button class="btn btn-link">Link</button>
-                        <button class="btn btn-hover">Hover</button>
-                        <button class="btn btn-disabled">Disabled</button>
+            </aside>
+            <main class="main">
+                <!-- First Part-->
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Button</h2>
+                    <p>
+                        The Button component has basic 2 types,
+                        <span class="component_description">solid buttons</span> and 
+                        <span class="component_description">outlined buttons</span>.
+                    </p>
+                    <h3 class="component_heading">Solid Buttons</h3>
+                    <p>
+                        The Solid button components has basic 5 types,
+                        <span class="component_description">btn-primary</span>,  
+                        <span class="component_description">btn-round</span>, 
+                        <span class="component_description">btn-link</span>, 
+                        <span class="component_description">btn-hover</span>, 
+                        <span class="component_description">btn-disabled</span>.
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="flex flex-row-wrap flex-space-evenly">
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-round">Rounded </button>
+                            <button class="btn btn-link">Link</button>
+                            <button class="btn btn-hover">Hover</button>
+                            <button class="btn btn-disabled">Disabled</button>
+                        </div>
+                    </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-round%2522%253ERounded%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ELink%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-hover%2522%253EHover%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-disabled%2522%253EDisabled%253C%252Fbutton%253E"
+                            class="button-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                <!-- Second Part-->
+                    <h3 class="component_heading">Outlined Buttons</h3>
+                    <p>
+                        The Outlined button components has basic 4 types,
+                        <span class="component_description">btn-outline-primary</span>,  
+                        <span class="component_description">btn-outline-round</span>, 
+                        <span class="component_description">btn-outline-icon</span>, 
+                        <span class="component_description">btn-outline-hover</span>, 
+                        <span class="component_description">btn-outline-disabled</span>.
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="flex flex-row-wrap flex-space-evenly">
+                            <button class="btn btn-outline-primary">Primary</button>
+                            <button class="btn btn-outline-round">Rounded </button>
+                            <button class="btn btn-outline-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                            <button class="btn btn-outline-hover">Hover</button>
+                            <button class="btn btn-outline-disabled">Disabled</button>
+                        </div>
+                    </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-round%2522%253ERounded%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-icon%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-hover%2522%253EHover%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-disabled%2522%253EDisabled%253C%252Fbutton%253E"
+                            class="button-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                <!-- Third Part-->
+                    <h3 class="component_heading">Icon and Floating Action Buttons</h3>
+                    <p>
+                        The floating action button can be implemented using
+                        <span class="component_description">btn-floating-action</span>,  
+                        and a button with an icon can be implemented using 
+                        <span class="component_description">btn-icon</span>.
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="flex flex-row-wrap flex-gap-2">
+                            <button class="btn btn-floating-action"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <button class="btn btn-icon"><span class="btn-icon-text">Login</span><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-floating-action%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon-text%2522%253ELogin%253C%252Fspan%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E"
+                            class="button-iframe btn-icon-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-round%2522%253ERounded%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ELink%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-hover%2522%253EHover%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-disabled%2522%253EDisabled%253C%252Fbutton%253E"
-                        class="button-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            <!-- Second Part-->
-                <h3 class="component_heading">Outlined Buttons</h3>
-                <p>
-                    The Outlined button components has basic 4 types,
-                    <span class="component_description">btn-outline-primary</span>,  
-                    <span class="component_description">btn-outline-round</span>, 
-                    <span class="component_description">btn-outline-icon</span>, 
-                    <span class="component_description">btn-outline-hover</span>, 
-                    <span class="component_description">btn-outline-disabled</span>.
-                </p>
-                <div class="component_wrapper_box">
-                    <div class="button-flex flex">
-                        <button class="btn btn-outline-primary">Primary</button>
-                        <button class="btn btn-outline-round">Rounded </button>
-                        <button class="btn btn-outline-icon"><img src="/assets/arrow_forward_icon.svg" alt="forward-arrow"/></button>
-                        <button class="btn btn-outline-hover">Hover</button>
-                        <button class="btn btn-outline-disabled">Disabled</button>
-                    </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-round%2522%253ERounded%2520%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-icon%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-hover%2522%253EHover%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-disabled%2522%253EDisabled%253C%252Fbutton%253E"
-                        class="button-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            <!-- Third Part-->
-            <h3 class="component_heading">Icon and Floating Action Buttons</h3>
-            <p>
-                The floating action button can be implemented using
-                <span class="component_description">btn-floating-action</span>,  
-                and a button with an icon can be implemented using 
-                <span class="component_description">btn-icon</span>.
-            </p>
-            <div class="component_wrapper_box">
-                <div class="button-flex flex">
-                    <button class="btn btn-floating-action"><img src="/assets/add_icon.svg" alt="+"/></button>
-                    <button class="btn btn-icon"><span class="btn-icon-text">Login</span><img src="/assets/arrow_forward_icon.svg" alt="->"/></button>
-                </div>
-            </div>
-
-            <div class="component_iframe">
-                <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-floating-action%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon-text%2522%253ELogin%253C%252Fspan%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E"
-                class="button-iframe btn-icon-iframe"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-            </div>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
 </body>
 </html>

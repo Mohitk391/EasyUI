@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>East UI / Badge</title>
-    <link href="badge.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
     <link href="/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="nav-bar-logo" href="/index.html">EASY UI</a>
-        <a class="social-link" href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><img src="/assets/github-icon.svg" alt="github"></a>
-        <a class="social-link" href="https://twitter.com/MohitPa88351529"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
-    </nav>
-    <main class="grid-container">
-<!--   Sidebar start  -->        
-        <aside class="sidebar">
-            <h3 class="sidebar-heading">Components</h3>
+    <div class="page-layout">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">EASY UI</a>
+            <div class="external-links">
+                <a href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <div class="main-body">
+            <aside class="sidebar">
+                <h3 class="sidebar-heading">Components</h3>
             <ul>
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/alert/alert.html">Alert</a>
@@ -25,8 +27,8 @@
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
                 </li>
-                <li class="sidebar-item sidebar-item-active">
-                    <a class="component-link " href="/components/badge/badge.html">Badge</a>
+                <li class="sidebar-item  sidebar-item-active">
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
                 </li>
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/button/button.html">Button</a>
@@ -50,51 +52,50 @@
                     <a class="component-link" href="/components/rating/rating.html">Rating</a>
                 </li>
             </ul>
-        </aside>
-<!--   Sidebar end-->
-<!--   Badge start-->
-        <div class="components">
-            <div class="component_wrapper">
-                <h2 class="component_heading">Badge</h2>
-                <p>
-                    The badge component has basic 4 types,
-                    <span class="component_description">badge-avatar-large</span>, 
-                    <span class="component_description">badge-avatar-medium</span>,
-                    <span class="component_description">badge-avatar-small</span>,
-                    <span class="component_description">badge-icon-small</span>,
-                    and 2 status, <span class="component_description">online</span> and <span class="component_description">offline</span>.
-                </p>
-                <h3 class="component_heading">Standar Badges</h3>
-                <div class="component_wrapper_box">
-                    <div class="avatar_flex flex">
-                        <span class="avatar avatar-xl">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
-                            <div class="badge-avatar-large online round"></div>
-                        </span>
-                        <span class="avatar avatar-lg">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/> 
-                            <div class="badge-avatar-medium offline round"></div>
-                        </span>
-                        <span class="avatar avatar-md">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
-                            <div class="badge-avatar-small online sqaure"></div>
-                        </span>
-                        <span class="badge-container">
-                            <img src="/assets/shopping-cart-icon.svg" alt="shopping cart" class="badge-icon-small"/>
-                            <span class="badge badge-text">2</span>
-                        </span>
+            </aside>
+            <main class="main">
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Badge</h2>
+                    <p>
+                        The badge component has basic 4 types,
+                        <span class="component_description">badge-avatar-large</span>, 
+                        <span class="component_description">badge-avatar-medium</span>,
+                        <span class="component_description">badge-avatar-small</span>,
+                        <span class="component_description">badge-icon-small</span>,
+                        and 2 status, <span class="component_description">online</span> and <span class="component_description">offline</span>.
+                    </p>
+                    <h3 class="component_heading">Standar Badges</h3>
+                    <div class="component_wrapper_box">
+                        <div class="avatar_flex flex">
+                            <span class="avatar avatar-xl badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                                <div class="badge-avatar badge-avatar-large online round"></div>
+                            </span>
+                            <span class="avatar avatar-lg  badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/> 
+                                <div class="badge-avatar badge-avatar-medium offline round"></div>
+                            </span>
+                            <span class="avatar avatar-md badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                                <div class="badge-avatar badge-avatar-small online sqaure"></div>
+                            </span>
+                            <span class="badge-container shopping-cart-badge">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="shopping-badge">2</span>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-large%2520online%2520round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522round%2522%252F%253E%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-medium%2520offline%2520round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-md%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522square%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-small%2520online%2520sqaure%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge-container%2520shopping-cart-badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522shopping-badge%2520shopping-badge-text%2522%253E2%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+                            class="badge-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-large%2520online%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522round%2522%252F%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-medium%2520offline%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522square%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-small%2520online%2520sqaure%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522badge-icon-small%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-text%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
-                        class="badge-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-            </iframe>
-                </div>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
 </body>
 </html>
