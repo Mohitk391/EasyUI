@@ -54,8 +54,10 @@
 }
 
 .sidebar ul {
+    height: 100vh;
     position: sticky;
     top: 0;
+    overflow: scroll;
 }
 
 .sidebar-item{
