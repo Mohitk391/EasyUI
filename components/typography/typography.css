@@ -1,0 +1,77 @@
+.h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.h6{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.font-xs{
+    font-size: 0.8rem;
+}
+
+.font-sm{
+    font-size: 1rem;
+}
+
+.font-md{
+    font-size: 1.1rem;
+}
+
+
+.font-lg{
+    font-size: 2rem;
+}
+
+.font-xl{
+    font-size: 3rem;
+}
+
+.font-normal{
+    font-weight: 400;
+}
+
+.font-semi-bold{
+    font-weight: 550;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.font-strike-through{
+    text-decoration: line-through;
+}
+
+.highlight-text{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.text-centered{
+    display: block;
+    text-align: center;
+}
