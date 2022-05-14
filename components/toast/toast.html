@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyUI - Toast</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-layout">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">EASY UI</a>
+            <div class="external-links">
+                <a href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <div class="main-body">
+            <aside class="sidebar">
+                <h3 class="sidebar-heading">Components</h3>
+            <ul>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/card/card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/image/image.html">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/input/input.html">Input</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/list/list.html">List</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/modal/modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/rating/rating.html">Rating</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/navigation/navigation.html">Navigation</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="component-link" href="/components/typography/typography.html">Typography</a>
+                </li>
+                <li class="sidebar-item sidebar-item-active">
+                    <a class="component-link" href="/components/toast/toast.html">Toast/Snackbar</a>
+                </li>
+            </ul>
+            </aside>
+            <main class="main">
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Toast / Snackbar</h2>
+                    <p>
+                        Toast / Snackbars are popups which are shown at the bottom of the screen to show a message.
+                    </p>
+                    <h3 class="component_heading">Toast</h3>
+                
+                    <div class="component_wrapper_box">
+                        <button id="btnToast" class="btn btn-hover">Show Toast</button>
+                    </div>
+
+                    <div id="toast">Toast message appears here... <i class="fa fa-times-circle-o" id="hideToast" aria-hidden="true"></i></div>
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=45px&ph=47px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522btnToast%2522%2520class%253D%2522btn%2520btn-hover%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%250A%253Cdiv%2520id%253D%2522toast%2522%253E%250A%2520%2520Toast%2520message%2520appears%2520here...%2520%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times-circle-o%2522%2520id%253D%2522hideToast%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                            class="toast-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="toast.js" ></script>
+</body>
+</html>
