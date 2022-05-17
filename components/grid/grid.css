@@ -1,0 +1,25 @@
+.grid{
+    display: grid;
+}
+
+.grid-2{
+    grid-auto-flow: column;
+    grid-template-areas: 1fr 1fr;
+}
+
+.grid-3{
+    grid-auto-flow: column;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+
+.border-black{
+    border: 1px solid var(--black);
+}
+
+.grid-iframe{
+    width: 32rem;
+    height: 15rem; 
+    border:0; 
+    transform: scale(1);
+    overflow:hidden;
+}
