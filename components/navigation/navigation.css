@@ -80,3 +80,19 @@
     align-items: center;
     font-size: 1.5rem;
 }
+
+.navigation-1-iframe{
+    width: 46.25rem; 
+    height: 18.75rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+
+.navigation-2-iframe{
+    width: 60.188rem; 
+    height: 26.25rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
