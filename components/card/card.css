@@ -73,6 +73,7 @@
 .card-content{
     display: grid;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 .card-content-horizontal{
