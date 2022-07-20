@@ -8,37 +8,6 @@
                         "main-body";
 }
 
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 4fr; 
-    padding: 1rem;
-    background-color: var(--blue-background);
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.navbar a {
-    color: var(--black);
-    text-decoration: none;
-} 
-
-.logo{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    padding: 0 1.5rem; 
-    
-}
-
-.external-links {   
-    width: 20%;
-    justify-self: end;
-
-    display: flex;
-    justify-content: space-evenly;
-    
-    font-size: 2rem;
-}
-
 .main-body{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -57,7 +26,7 @@
     height: 100vh;
     position: sticky;
     top: 0;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .sidebar-item{

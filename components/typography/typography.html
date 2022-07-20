@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy UI / Image</title>
+    <title>EasyUI - Typography</title>
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
-    <link href="/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="page-layout">
@@ -17,7 +17,7 @@
                 <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
         </nav>
-        <div class="main-body">    
+        <div class="main-body">
             <aside class="sidebar">
                 <h3 class="sidebar-heading">Installation</h3>
                 <div class="sidebar-item">
@@ -40,7 +40,7 @@
                     <li class="sidebar-item">
                         <a class="component-link" href="/components/card/card.html">Card</a>
                     </li>
-                    <li class="sidebar-item  sidebar-item-active">
+                    <li class="sidebar-item">
                         <a class="component-link" href="/components/image/image.html">Image</a>
                     </li>
                     <li class="sidebar-item">
@@ -58,46 +58,56 @@
                     <li class="sidebar-item">
                         <a class="component-link" href="/components/navigation/navigation.html">Navigation</a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item sidebar-item-active">
                         <a class="component-link" href="/components/typography/typography.html">Typography</a>
                     </li>
                 </ul>
             </aside>
             <main class="main">
                 <div class="component_wrapper">
-                    <h2 class="component_heading">Image</h2>
+                    <h2 class="component_heading">Typography</h2>
                     <p>
-                        The image component has basic 2 types,
-                        <span class="component_description">Responsive Image</span> and 
-                        <span class="component_description">Round Image</span> 
-                        
+                        The text utilities makes about 80-90% of any site, so it is better to use awesome text utilities to make awesome projects. Following are text utilities which can be used to create awesome projects,
+                        <span class="component_description">Headings</span>,
+                        <span class="component_description">Different sized texts</span>
                     </p>
-                    <h3 class="component_heading">Responsive Image</h3>
-                    <div class="component_wrapper_box flex-center">
-                        <div class="responsive-image-container">
-                            <img  class="responsive-image" src="/assets/avatar_sample.jpg" alt="image"/>
-                        </div>
+                    <h3 class="component_heading">Headings</h3>
+                    
+                    <div class="component_wrapper_box flex flex-column flex-space-between flex-gap-2">
+                        <div class="h1">Heading-1</div>
+                        <div class="h2">Heading-2</div>
+                        <div class="h3">Heading-3</div>
+                        <div class="h4">Heading-4</div>
+                        <div class="h5">Heading-5</div>
+                        <div class="h6">Heading-6</div>
                     </div>
-    
+
                     <div class="component_iframe">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522responsive-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
-                            class="image-iframe"
+                            src="https://carbon.now.sh/embed?bg=rgba%2812%2C26%2C35%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522h1%2522%253EHeading-1%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h2%2522%253EHeading-2%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h3%2522%253EHeading-3%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h4%2522%253EHeading-4%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h5%2522%253EHeading-5%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h6%2522%253EHeading-6%253C%252Fdiv%253E"
+                            class="typography-iframe"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
-    
-                    <h3 class="component_heading">Round Image</h3>
+                    <br /><br />
+
                     <div class="component_wrapper_box">
-                        <div class="flex flex-center">
-                            <img class="round-image" src="/assets/avatar_sample.jpg" alt="image"/>
+                        
+                        <div class="component_wrapper_box flex flex-column flex-space-between flex-gap-2">
+                            <div class="font-xs">Extra Small text</div>
+                            <div class="font-xs">Small text</div>
+                            <div class="font-md">Medium text</div>
+                            <div class="font-lg">Large text</div>
+                            <div class="font-xl">Extra Large text</div>
+                            <div class="text-centered">Centered text</div>
                         </div>
-                    </div>
     
+                    </div>
+
                     <div class="component_iframe">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522round-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
-                            class="image-iframe"
+                            src="https://carbon.now.sh/embed?bg=rgba%2812%2C26%2C35%2C1%29&t=seti&wt=none&l=htmlmixed&width=585&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522font-xs%2522%253EExtra%2520Small%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-xs%2522%253ESmall%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-md%2522%253EMedium%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-lg%2522%253ELarge%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522font-xl%2522%253EExtra%2520Large%2520text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-centered%2522%253ECentered%2520text%253C%252Fdiv%253E"
+                            class="typography-iframe"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
