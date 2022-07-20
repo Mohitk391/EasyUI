@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
     <title>Easy UI</title>
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="nav-bar-logo" href="/index.html">EASY UI</a>
-        <a class="social-link" href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><img src="/assets/github-icon.svg" alt="github"></a>
-        <a class="social-link" href="https://twitter.com/MohitPa88351529"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
-    </nav>
-
-
-    <main class="grid-container">
-<!-- Sidebar  --> 
+    <div class="page-layout">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">EASY UI</a>
+            <div class="external-links">
+                <a href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <div class="main-body">
         <aside class="sidebar">
             <h3 class="sidebar-heading">Installation</h3>
             <div class="sidebar-item">
@@ -56,133 +56,128 @@
                     <a class="component-link" href="/components/rating/rating.html">Rating</a>
                 </li>
             </ul>
-        </aside>
+            </aside>
+            <main class="main">
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Alert</h2>
+                    <p>
+                        The alert component has basic 4 types,
+                        <span class="component_description">alert-success</span>, 
+                        <span class="component_description">alert-danger</span>,
+                        <span class="component_description">alert-info</span>,
+                        <span class="component_description">alert-warning</span>, 
+                        and 2 additional basic types <span class="component_description">alert-primary</span> and <span class="component_description">alert-secondary</span>.
+                    </p>
+                    <h3 class="component_heading">Standard Alerts</h3>
+                    <div class="component_wrapper_box">
+                        <div class="alert-flex flex">
+                            <div class="alert alert-primary"><strong>Primary Alert:</strong> Check this primary message!!</div>
+                            <div class="alert alert-secondary"><strong>Secondary Alert:</strong> Check this secondary message!!</div>
+                            <div class="alert alert-success"><strong>Success Alert:</strong> Check this success message!!</div>
+                            <div class="alert alert-danger"><strong>Danger Alert:</strong> Check this danger message!!</div>
+                            <div class="alert alert-info"><strong>Info Alert:</strong> Check this info message!!</div>
+                            <div class="alert alert-warning"><strong>Warning Alert:</strong> Check this warning message!!</div>
+                            </span>
+                        </div>
+                    </div>
 
-        <div class="components">
-<!--  Avatar  -->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Avatar</h2>
-                <p>
-                    The avatar component has basic 5 sizes,
-                    <span class="component_description">avatar-xl</span>, 
-                    <span class="component_description">avatar-lg</span>,
-                    <span class="component_description">avatar-md</span>,
-                    <span class="component_description">avatar-sm</span>,
-                    <span class="component_description">avatar-xs</span>, 
-                    and by using <span class="component_description">round</span> we can have round avatars and <span class="component_description">square</span> for square avatars.
-                </p>
-                <h3 class="component_heading">Standard Avatars</h3>
-                <div class="component_wrapper_box">
-                    <div class="avatar_flex flex">
-                        <span class="avatar avatar-xl">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
-                        </span>
-                        <span class="avatar avatar-lg">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
-                        </span>
-                        <span class="avatar avatar-md">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
-                        </span>
-                        <span class="avatar avatar-sm">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="square"/>
-                        </span>
-                        <span class="avatar avatar-xs">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
-                        </span>
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=173%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%253Cstrong%253EPrimary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520%250A%2520this%2520primary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%253Cstrong%253ESecondary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520secondary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%253Cstrong%253ESuccess%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520success%2520message%21%21%253C%252Fdiv%253E"
+                            class="alert-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
-        
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
-                        class="avatar-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-            
-    <!-- Alert -->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Alert</h2>
-                <p>
-                    The alert component has basic 4 types,
-                    <span class="component_description
-                    ">alert-success</span>, 
-                    <span class="component_description
-                    ">alert-danger</span>,
-                    <span class="component_description
-                    ">alert-info</span>,
-                    <span class="component_description
-                    ">alert-warning</span>, 
-                    and 2 additional basic types <span class="component_description
-                    ">alert-primary</span> and <span class="component_description_highlight">alert-secondary</span>.
-                </p>
-                <h3 class="component_heading">Standard Alerts</h3>
-                <div class="component_wrapper_box">
-                    <div class="alert-flex flex">
-                        <div class="alert alert-primary"><strong>Primary Alert:</strong> Check this primary message!!</div>
-                        <div class="alert alert-secondary"><strong>Secondary Alert:</strong> Check this secondary message!!</div>
-                        <div class="alert alert-success"><strong>Success Alert:</strong> Check this success message!!</div>
-                        <div class="alert alert-danger"><strong>Danger Alert:</strong> Check this danger message!!</div>
-                        <div class="alert alert-info"><strong>Info Alert:</strong> Check this info message!!</div>
-                        <div class="alert alert-warning"><strong>Warning Alert:</strong> Check this warning message!!</div>
-                        </span>
+                
+                <hr class="component-separator">
+
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Avatar</h2>
+                    <p>
+                        The avatar component has basic 5 sizes,
+                        <span class="component_description">avatar-xl</span>, 
+                        <span class="component_description">avatar-lg</span>,
+                        <span class="component_description">avatar-md</span>,
+                        <span class="component_descriptiont">avatar-sm</span>,
+                        <span class="component_description">avatar-xs</span>, 
+                        and by using <span class="component_description">round</span> we can have round avatars and <span class="component_description">square</span> for square avatars.
+                    </p>
+                    <h3 class="component_heading">Standard Avatars</h3>
+                    <div class="component_wrapper_box">
+                        <div class="avatar_flex flex">
+                            <span class="avatar avatar-xl">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                            </span>
+                            <span class="avatar avatar-lg">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                            </span>
+                            <span class="avatar avatar-md">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                            </span>
+                            <span class="avatar avatar-sm">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="square"/>
+                            </span>
+                            <span class="avatar avatar-xs">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=173%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%253Cstrong%253EPrimary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520%250A%2520this%2520primary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%253Cstrong%253ESecondary%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520secondary%2520message%21%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%253Cstrong%253ESuccess%2520Alert%253A%253C%252Fstrong%253E%2520Check%2520this%2520success%2520message%21%21%253C%252Fdiv%253E"
-                        class="alert-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-
-<!--  Badge  -->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Badge</h2>
-                <p>
-                    The badge component has basic 4 types,
-                    <span class="component_description">badge-avatar-large</span>, 
-                    <span class="component_description">badge-avatar-medium</span>,
-                    <span class="component_description">badge-avatar-small</span>,
-                    <span class="component_description">badge-icon-small</span>,
-                    and 2 status, <span class="component_description">online</span> and <span class="component_description">offline</span>.
-                </p>
-                <h3 class="component_heading">Standar Badges</h3>
-                <div class="component_wrapper_box">
-                    <div class="avatar_flex flex">
-                        <span class="avatar avatar-xl">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
-                            <div class="badge-avatar-large online round"></div>
-                        </span>
-                        <span class="avatar avatar-lg">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/> 
-                            <div class="badge-avatar-medium offline round"></div>
-                        </span>
-                        <span class="avatar avatar-md">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
-                            <div class="badge-avatar-small online sqaure"></div>
-                        </span>
-                        <span class="badge-container">
-                            <img src="/assets/shopping-cart-icon.svg" alt="shopping cart" class="badge-icon-small"/>
-                            <span class="badge badge-text">2</span>
-                        </span>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
+                            class="avatar-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-java&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-large%2520online%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522round%2522%252F%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-medium%2520offline%2520round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522square%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar-small%2520online%2520sqaure%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522badge-icon-small%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-text%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
-                        class="badge-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
+                <hr class="component-separator">
 
-<!--   Button  -->
-            <div class="components">
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Badge</h2>
+                    <p>
+                        The badge component has basic 4 types,
+                        <span class="component_description">badge-avatar-large</span>, 
+                        <span class="component_description">badge-avatar-medium</span>,
+                        <span class="component_description">badge-avatar-small</span>,
+                        <span class="component_description">badge-icon-small</span>,
+                        and 2 status, <span class="component_description">online</span> and <span class="component_description">offline</span>.
+                    </p>
+                    <h3 class="component_heading">Standar Badges</h3>
+                    <div class="component_wrapper_box">
+                        <div class="avatar_flex flex">
+                            <span class="avatar avatar-xl badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                                <div class="badge-avatar badge-avatar-large online round"></div>
+                            </span>
+                            <span class="avatar avatar-lg  badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/> 
+                                <div class="badge-avatar badge-avatar-medium offline round"></div>
+                            </span>
+                            <span class="avatar avatar-md badge-container">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                                <div class="badge-avatar badge-avatar-small online sqaure"></div>
+                            </span>
+                            <span class="badge-container shopping-cart-badge">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="shopping-badge">2</span>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-large%2520online%2520round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522round%2522%252F%253E%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-medium%2520offline%2520round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522avatar%2520avatar-md%2520badge-container%2522%253E%250A%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520%2520class%253D%2522square%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-small%2520online%2520sqaure%2522%253E%253C%252Fdiv%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge-container%2520shopping-cart-badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522shopping-badge%2520shopping-badge-text%2522%253E2%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+                            class="badge-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr class="component-separator" />
+
                 <!-- First Part-->
                 <div class="component_wrapper">
                     <h2 class="component_heading">Button</h2>
@@ -201,7 +196,7 @@
                         <span class="component_description">btn-disabled</span>.
                     </p>
                     <div class="component_wrapper_box">
-                        <div class="button-flex flex">
+                        <div class="flex flex-row-wrap flex-space-evenly">
                             <button class="btn btn-primary">Primary</button>
                             <button class="btn btn-round">Rounded </button>
                             <button class="btn btn-link">Link</button>
@@ -228,10 +223,10 @@
                         <span class="component_description">btn-outline-disabled</span>.
                     </p>
                     <div class="component_wrapper_box">
-                        <div class="button-flex flex">
+                        <div class="flex flex-row-wrap flex-space-evenly">
                             <button class="btn btn-outline-primary">Primary</button>
                             <button class="btn btn-outline-round">Rounded </button>
-                            <button class="btn btn-outline-icon"><img src="/assets/arrow_forward_icon.svg" alt="forward-arrow"/></button>
+                            <button class="btn btn-outline-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                             <button class="btn btn-outline-hover">Hover</button>
                             <button class="btn btn-outline-disabled">Disabled</button>
                         </div>
@@ -245,483 +240,474 @@
                         </iframe>
                     </div>
                 <!-- Third Part-->
-                <h3 class="component_heading">Icon and Floating Action Buttons</h3>
-                <p>
-                    The floating action button can be implemented using
-                    <span class="component_description">btn-floating-action</span>,  
-                    and a button with an icon can be implemented using 
-                    <span class="component_description">btn-icon</span>.
-                </p>
-                <div class="component_wrapper_box">
-                    <div class="button-flex flex">
-                        <button class="btn btn-floating-action"><img src="/assets/add_icon.svg" alt="add-icon"/></button>
-                        <button class="btn btn-icon"><span class="btn-icon-text">Login</span><img src="/assets/arrow_forward_icon.svg" alt="forwward-arrow"/></button>
+                    <h3 class="component_heading">Icon and Floating Action Buttons</h3>
+                    <p>
+                        The floating action button can be implemented using
+                        <span class="component_description">btn-floating-action</span>,  
+                        and a button with an icon can be implemented using 
+                        <span class="component_description">btn-icon</span>.
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="flex flex-row-wrap flex-gap-2">
+                            <button class="btn btn-floating-action"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <button class="btn btn-icon"><span class="btn-icon-text">Login</span><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-floating-action%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon-text%2522%253ELogin%253C%252Fspan%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E"
+                            class="button-iframe btn-icon-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
 
-                <div class="component_iframe">
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-floating-action%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522btn-icon-text%2522%253ELogin%253C%252Fspan%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%253C%252Fbutton%253E"
-                    class="button-iframe btn-icon-iframe"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-                </div>
-                </div>
-            </div>
-    <!--   Card start-->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Card</h2>
-                <p>
-                    The Card component can be of 6 types,
-                    <span class="component_description">Card with badge</span>,  
-                    <span class="component_description">Card with dismiss</span>, 
-                    <span class="component_description">Card with text overlay</span>,
-                    <span class="component_description">Text only Card</span>,
-                    <span class="component_description">Horizontal Card</span>,
-                    <span class="component_description">Card with shadow</span> 
-                </p>
-                <!-- Card with badges-->
-                <h3 class="component_heading">Card with badge</h3>
-                <div class="component_wrapper_box">
-                    <div class="card">
-                        <div class="image">
-                            <span class="card-badge">Latest</span>
-                            <img src="/assets/card-image.jpg" alt="card-image">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">Title</div>
-                            <div class="card-sub-title">sub-title</div>
-                            <div class="content">
-                                This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
+                <hr class="component-separator">
+
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Card</h2>
+                    <p>
+                        The Card component can be of 5 types,
+                        <span class="component_description">Card with badge</span>,  
+                        <span class="component_description">Card with dismiss</span>, 
+                        <span class="component_description">Card with text overlay</span>,
+                        <span class="component_description">Text only Card</span>,
+                        <span class="component_description">Horizontal Card</span>
+                    </p>
+                    <!-- Card with badges-->
+                    <h3 class="component_heading">Card with badge</h3>
+                    <div class="component_wrapper_box">
+                        <div class="card vertical-card">
+                            <div class="card-image pos-relative">
+                                <span class="card-badge top-left">Latest</span>
+                                <img src="/assets/sofa.jpeg" alt="sofa">
                             </div>
-                            <div class="footer flex flex-end">
-                                    <div class="card-footer-icons flex">
-                                        <span class="icon-img-container" ><img src="/assets/heart_icon.svg" alt="heart-icon"></span>
-                                        <span  class="icon-img-container"><img src="/assets/share_black_24dp.svg" alt="share-icon"></span>
-                                        <span  class="icon-img-container" ><img src="/assets/dots_vertical_icon.svg" alt="dots-icon"></span>
-                                    </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <p class="card-title">Sofa</p>
+                                    <p class="card-sub-title">From Furn-Easy</p>
+                                </div>
+                                <div class="card-price-text">Rs. 5000</div>
+                                <div class="content">
+                                    <p>This is the content body where the description about the product will be present.</p>
+                                </div>
+                                <div class="card-footer flex flex-end ">
+                                        <div class="card-icons">
+                                            <button class="card-icon-container"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                                            <button  class="card-icon-container"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+                                            <button class="card-icon-container" ><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520vertical-card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-image%2520pos-relative%2522%253E%250A%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522card-badge%2520top-left%2522%253ELatest%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-title%2522%253ESofa%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-sub-title%2522%253EFrom%2520Furn-Easy%253C%252Fp%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-text%2522%253ERs.%25205000%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2520flex-end%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-icon-container%2522%2520%253E%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv"
+                            class="card-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253ELatest%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2520flex%2520flex-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-icons%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 514px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-                    
-                <!-- Card with dismiss-->
-                <h3 class="component_heading">Card with dismiss</h3>
-                <div class="component_wrapper_box">
-                    <div class="card">
-                        <div class="image">
-                            <span class="card-badge-icon"><img src="/assets/exit-icon.svg"></span>
-                            <img src="/assets/card-image.jpg"  alt="card-image">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">Title</div>
-                            <div class="card-sub-title">sub-title</div>
-                            <div class="content">
-                                This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
+                    <!-- Card with dismiss-->
+                    <h3 class="component_heading">Card with dismiss</h3>
+                    <div class="component_wrapper_box">
+                        <div class="card vertical-card">
+                            <div class="card-image pos-relative">
+                                <button class="card-badge top-right card-dismiss-icon"><i class="fa fa-times-circle" aria-hidden="true"></i></i></button>
+                                <img src="/assets/sofa.jpeg" alt="sofa">
                             </div>
-                            <div class="footer flex flex-end">
-                                    <div class="card-footer-buttons">
-                                        <button class="card-button-accept">Accept</button>
-                                        <button class="card-button-dismiss">Dismiss</button>
-                                    </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <p class="card-title">Sofa</p>
+                                    <p class="card-sub-title">From Furn-Easy</p>
+                                </div>
+                                <div class="card-price-text">Rs. 5000</div>
+                                <div class="card-footer flex">
+                                        <div class="card-footer-buttons">
+                                            <button class="btn btn-hover cart-button">Add to Cart</button>
+                                            <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge-icon%2522%253E%253Cimg%2520src%253D%2522exit-icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2520flex%2520flex-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button-dismiss%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 489px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520vertical-card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-image%2520pos-relative%2522%253E%250A%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522card-badge%2520top-right%2520card-dismiss-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-times-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-title%2522%253ESofa%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-sub-title%2522%253EFrom%2520Furn-Easy%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-price-text%2522%253ERs.%25205000%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-footer%2520flex%2522%253E%250A%2520%2520%2520%2520%2509%2509%253Cdiv%2520class%253D%2522card-footer-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            class="card-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
 
-                <!--Card with text overlay-->
-                <h3 class="component_heading">Card with text overlay</h3>
-                <div class="component_wrapper_box">
-                    <div class="card">
-                        <div class="image flex image-text-overlay">
-                            <img src="/assets/card-image-2.jpg" alt="card-image"/>
-                            <div class="card-text-image">
+                    <!--Card with text overlay-->
+                    <h3 class="component_heading">Card with text overlay</h3>
+                    <div class="component_wrapper_box">
+                        <div class="card vertical-card overlay">
+                            <div class="card-image pos-relative">
+                                <img src="/assets/sofa.jpeg" alt="sofa">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <p class="card-title">Sofa</p>
+                                    <p class="card-sub-title">From Furn-Easy</p>
+                                </div>
+                                <div class="card-price-text">Rs. 5000</div>
+                                <div class="content">
+                                    <p>This is the content body where the description about the product will be present.</p>
+                                </div>
+                                <div class="card-footer flex flex-end ">
+                                        <div class="card-icons ">
+                                            <button class="card-icon-container"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                                            <button  class="card-icon-container"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+                                            <button class="card-icon-container" ><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="overlay-layer">Out Of Stock</div>
+                        </div>
+                    </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520vertical-card%2520overlay%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-image%2520pos-relative%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-title%2522%253ESofa%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-sub-title%2522%253EFrom%2520Furn-Easy%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-text%2522%253ERs.%25205000%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2520flex-end%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-icons%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%2520%253E%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-layer%2522%253EOut%2520Of%2520Stock%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            class="card-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Card with only text-->
+                    <h3 class="component_heading">Text only Card</h3>
+                    <div class="component_wrapper_box">
+                        <div class="card flex-center">
+                            <div class="card-content ">
                                 <div class="card-title">Title</div>
                                 <div class="card-sub-title">sub-title</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
-                            </div>
-                            <div class="footer flex flex-end">
-                                    <div class="card-footer-icons flex">
-                                        <span class="icon-img-container" ><img src="/assets/heart_icon.svg" alt="heart-icon"></span>
-                                        <span  class="icon-img-container"><img src="/assets/share_black_24dp.svg" alt="share-icon"></span>
-                                        <span  class="icon-img-container" ><img src="/assets/dots_vertical_icon.svg" alt="dots-icon"></span>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522image%2520flex%2520image-text-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2520flex%2520flex-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-icons%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522heart_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522share_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522dots_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 538px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <!-- Card with only text-->
-                <h3 class="component_heading">Text only Card</h3>
-                <div class="component_wrapper_box">
-                    <div class="card flex-center">
-                        <div class="card-content ">
-                            <div class="card-title">Title</div>
-                            <div class="card-sub-title">sub-title</div>
-                            <div class="content">
-                                This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
-                            </div>
-                            <div class="footer flex">
+                                <div class="content">
+                                    <p>This a the content body where the description about the product will be present here.</p>
+                                </div>
+                                <div class="card-footer flex flex-space-between">
                                     <div class="card-footer-buttons">
-                                        <button class="btn-hover">Previous</button>
-                                        <button class="btn-hover">Next</button>
+                                        <button class="btn btn-hover">Previous</button>
+                                        <button class="btn btn-hover">Next</button>
                                     </div>
-                                    <div class="card-footer-icons flex">
-                                        <span class="icon-img-container" ><img src="/assets/heart_icon.svg" alt="heart-icon"></span>
-                                        <span  class="icon-img-container"><img src="/assets/share_black_24dp.svg" alt="share-icon"></span>
-                                        <span  class="icon-img-container" ><img src="/assets/dots_vertical_icon.svg" alt="dots-icon"></span>
+                                    <div class="card-icons">
+                                        <button class="card-icon-container"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                                        <button  class="card-icon-container"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+                                        <button class="card-icon-container" ><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520flex-center%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-icons%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-hover%2522%253EPrevious%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-hover%2522%253ENext%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522heart_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522share_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522dots_icon.svg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 514px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-                <!-- Horizontal Cards-->
-                <h3 class="component_heading">Horizontal Cards</h3>
-                <p>
-                    Horizontal cards allow to have more information than normal cards.
-                </p>
-                <div class="component_wrapper_box">
-                    <div class="card card-horizontal ">
-                        <div class="flex card-footer-buttons">
-                            <div class="card-image">
-                                <img  src="/assets/card-image.jpg"/>
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520flex-center%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-content%2520%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522content%2522%253E%250A%2509%2509%2509%253Cp%253E...%253C%252Fp%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-footer%2520flex%2520flex-space-between%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-footer-buttons%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522card-button-accept%2522%253EPrevious%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522card-button-accept%2522%253ENext%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520%2520class%253D%2522card-icon-container%2522%253E%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%2509%253Cbutton%2520class%253D%2522card-icon-container%2522%2520%253E%253Ci%2520class%253D%2522fa%2520fa-ellipsis-v%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            class="card-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Horizontal Cards-->
+                    <h3 class="component_heading">Horizontal Cards</h3>
+                    <p>
+                        Horizontal cards allow to have more information than normal cards.
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="card horizontal-card ">
+                            <div class="card-image-horizontal">
+                                <img  src="/assets/sofa.jpeg" alt="sofa"/>
                             </div>
                             <div class="card-content-horizontal">
-                                <div  class="card-title">Title </div>
-                                <div class="card-sub-title">sub-title</div>
-                                <div class="content">
-                                    This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
+                                <div class="card-header">
+                                    <p class="card-title">Sofa</p>
+                                    <p class="card-sub-title">From Furn-Easy</p>
                                 </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-horizontal-buttons">
-                            <div class="card-footer-buttons card-footer-buttons-horizontal">
-                                <button class="card-button-accept">Accept</button>
-                                <button class="card-button-dismiss">Dismiss</button>
+                                <div class="card-price-text">Rs. 5000</div>
+                                <div class="content">
+                                    <p>This a the content body where the description about the product will be present. It is upto us to choose the length of the description.</p>
+                                </div>
+                                <div class="card-footer flex">
+                                    <div class="card-footer-buttons">
+                                        <button class="btn btn-hover cart-button">Add to Cart</button>
+                                        <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520horizontal-card%2520%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-image-horizontal%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content-horizontal%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-title%2522%253ESofa%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-sub-title%2522%253EFrom%2520Furn-Easy%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-text%2522%253ERs.%25205000%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522card-footer-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAdd%2520to%2520Wishlist%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            class="card-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
                 </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522flex%2520card-footer-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%253Cimg%2520%2520src%253D%2522...%2522%252F%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%2520class%253D%2522card-title%2522%253ETitle%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-buttons%2520card-footer-buttons-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button-accept%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-button-dismiss%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
+                <hr class="component-separator">
 
-                <!-- Card with Shadows-->
-                <h3 class="component_heading">Card with Shadows</h3>
-                <p>
-                    The shadow in cards adds more depth in it, making it more attractive and beautiful.
-                </p>
-                <div class="component_wrapper_box flex-center">
-                    <div class="card card-shadow">
-                        <div class="image">
-                            <img src="/assets/card-image.jpg">
+                <!-- Images -->
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Image</h2>
+                    <p>
+                        The image component has basic 2 types,
+                        <span class="component_description">Responsive Image</span> and 
+                        <span class="component_description">Round Image</span> 
+                        
+                    </p>
+                    <h3 class="component_heading">Responsive Image</h3>
+                    <div class="component_wrapper_box flex-center">
+                        <div class="responsive-image-container">
+                            <img  class="responsive-image" src="/assets/avatar_sample.jpg" alt="image"/>
                         </div>
-                        <div class="card-content">
-                            <div class="card-title">Title</div>
-                            <div class="card-sub-title">sub-title</div>
-                            <div class="content">
-                                This a the content body where the description about the product will be present here. It is upto us to choose the length of the description.
-                            </div>
-                            <div class="footer flex flex-end">
-                                    <div class="card-footer-icons flex">
-                                        <span class="icon-img-container" ><img src="/assets/heart_icon.svg" alt="heart-icon"></span>
-                                        <span  class="icon-img-container"><img src="/assets/share_black_24dp.svg" alt="share-icon"></span>
-                                        <span  class="icon-img-container" ><img src="/assets/dots_vertical_icon.svg" alt="dots-icon"></span>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522responsive-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
+                            class="image-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+    
+                    <h3 class="component_heading">Round Image</h3>
+                    <div class="component_wrapper_box">
+                        <div class="flex flex-center">
+                            <img class="round-image" src="/assets/avatar_sample.jpg" alt="image"/>
+                        </div>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522round-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
+                            class="image-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr class="component-separator">
+
+                <!-- Input -->
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Input</h2>
+                    <p>The input is basically of 2 types,
+                        <span class="component_description">Textbox Input</span> and 
+                        <span class="component_description">Input box input</span> 
+                    </p>
+                    <h3 class="component_heading">Textbox Input</h3>
+                    <div class="component_wrapper_box">
+                        <form class="flex flex-column flex-center">
+                            <textarea class="textarea" name="textarea" placeholder="We can add more information here as compared to simple text input."  minlength="10" required></textarea>
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522textarea%2522%2520name%253D%2522textarea%2522%2520cols%253D%252230%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522We%2520can%2520add%2520more%2520information%2520here%2520as%2520compared%2520to%2520simple%2520text%2520input.%2522%2520%2520minlength%253D%252210%2522%2520required%253E%253C%252Ftextarea%253E"
+                            class="input-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+    
+                    <h3 class="component_heading">Input box</h3>
+                    <div class="component_wrapper_box flex flex-column flex-center">
+                        
+                            <label>Normal Input: </label>
+                            <input class="input" type="text"/>
+                        
+                            <label>Input Error: </label>
+                            <input class="input-error" type="text" />
+
+                            <label>Password: </label>
+                            <input class= "input" type="password" />
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Clabel%253ENormal%2520Input%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2522input%2522%2520type%253D%2522text%2522%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Clabel%253EInput%2520Error%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2522input-error%2522%2520type%253D%2522text%2522%2520%252F%253E%250A%250A%253Clabel%253EPassword%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2520%2522input%2522%2520type%253D%2522password%2522%253E"
+                            class="input-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr class="component-separator" />
+
+                <!-- Lists-->
+                <div class="component_wrapper">
+                    <h2 class="component_heading">List</h2>
+                    <p>The list is basically of 2 types,
+                        <span class="component_description">Basic lists</span> and 
+                        <span class="component_description">Stacked lists</span> 
+                    </p>
+                    <h3 class="component_heading">Basic Lists</h3>
+                    <div class="component_wrapper_box flex flex-center flex-list">
+                        <ul>
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                        <ul class="list-circle">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                        <ul class="list-none">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-circle%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            class="list-iframe";
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+    
+                    <h3 class="component_heading">List with checkbox & Radio</h3>
+                    <div class="component_wrapper_box flex  flex-center flex-list">
+                        <ul class="list-none">
+                            <li>
+                                <input type="checkbox" name="" id="checkbox-list-item1">
+                                <label for="checkbox-list-item1">Item 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="checkbox-list-item2">
+                                <label for="checkbox-list-item2">Item 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="checkbox-list-item3">
+                                <label for="checkbox-list-item3">Item 3</label>
+                            </li>
+                        </ul>
+    
+                        <ul class="list-none">
+                            <li>
+                                <input type="radio" name="radio-list" id="radio-list-item1">
+                                <label for="radio-list-item1">Item 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-list" id="radio-list-item2">
+                                <label for="radio-list-item2">Item 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-list" id="radio-list-item3">
+                                <label for="radio-list-item3">Item 3</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item2%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item3%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%253C%252Ful%253E%250A%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            class="list-iframe-2"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+    
+                    <h3 class="component_heading">Stacked List</h3>
+                    <div class="component_wrapper_box flex flex-column flex-center">
+                        <ul class="list-none">
+                            <li class="stack-item flex flex-center">
+                                <p class="list-item-content">Click the link</p>
+                                <a class="btn btn-link" href="">view</a>
+                            </li>
+                            <li class="stack-item flex flex-center">
+                                <p class="list-item-content">Click the link</p>
+                                <a class="btn btn-link" href="">view</a>
+                            </li>
+                            <li class="stack-item flex flex-center">
+                                <p class="list-item-content">Click the link</p>
+                                <a class="btn btn-link" href="">view</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-stack%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            class="list-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr class="component-separator" />
+
+                <!-- Modal  -->
+                <div  class="component_wrapper ">
+                    <h2 class="component_heading">Modal</h2>
+                    <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
+                    <h3 class="component_heading">Basic Modal</h3>
+                    <div class="component_wrapper_box flex flex-center ">
+                        <div>
+                            <button id="openModal" class="btn btn-round">Toggle Modal</button>
+                            <div id="myModal" class="modal flex-center">
+                                    <div class="modal-content">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Ducimus amet, adipisci sit placeat ipsam fugit quis ut ad illo
+                                            omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
+                                        </p>
+                                        <button id="closeModal" class="btn btn-hover btn-modal">close</button>
                                     </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520%2520card-shadow%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-sub-title%2522%253Esub-title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522footer%2520flex%2520flex-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-icons%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%2520class%253D%2522icon-img-container%2522%2520%253E%253Cimg%2520src%253D%2522...%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 800px; height: 489px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-    <!-- Image Starts-->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Image</h2>
-                <p>
-                    The image component has basic 2 types,
-                    <span class="component_description">Responsive Image</span> and 
-                    <span class="component_description">Round Image</span> 
-                    
-                </p>
-                <h3 class="component_heading">Responsive Image</h3>
-                <div class="component_wrapper_box flex-center">
-                    <div class="responsive-image">
-                        <img src="/assets/card-image-2.jpg"/>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cbutton%2520id%253D%2522openModal%2522%2520class%253D%2522btn%2520btn-round%2522%253EToggle%2520Modal%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-primary%2520btn-modal%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            class="modal-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
 
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522responsive-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
-                        class="image-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
+                <hr class="component-separator" />
 
-                <h3 class="component_heading">Round Image</h3>
-                <div class="component_wrapper_box">
-                    <div class="flex-center">
-                        <img class="round-image" src="/assets/card-image-2.jpg"/>
-                    </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522round-image%2522%253E%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%252F%253E%253C%252Fdiv%253E"
-                        class="image-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-    <!-- Input -->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Input</h2>
-                <p>The input is basically of 2 types,
-                    <span class="component_description">Textbox Input</span> and 
-                    <span class="component_description">Input box input</span> 
-                </p>
-                <h3 class="component_heading">Textbox Input</h3>
-                <div class="component_wrapper_box flex-center">
-                    <form>
-                        <textarea class="textarea" name="textarea" cols="30" rows="10" placeholder="We can add more information here as compared to simple text input."  minlength="10" required></textarea>
-                        <button class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522textarea%2522%2520name%253D%2522textarea%2522%2520cols%253D%252230%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522We%2520can%2520add%2520more%2520information%2520here%2520as%2520compared%2520to%2520simple%2520text%2520input.%2522%2520%2520minlength%253D%252210%2522%2520required%253E%253C%252Ftextarea%253E"
-                        class="input-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3 class="component_heading">Input box</h3>
-                <div class="component_wrapper_box flex flex-column flex-center">
-                    <div><label>Normal Input: </label><input class="input" type="text"/></div>
-                    <div><label>Input Error: </label><input class="input-error" type="text" /></div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Clabel%253ENormal%2520Input%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2522%2520type%253D%2522text%2522%252F%253E%250A%253Clabel%253EInput%2520Error%253A%2520%253C%252Flabel%253E%253Cinput%2520class%253D%2522input%2520input-error%2522%2520type%253D%2522text%2522%2520%252F%253E"
-                        class="input-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-        </iframe>
-                </div>
-            </div>
-    <!-- List -->
-            <div class="component_wrapper">
-                <h2 class="component_heading">List</h2>
-                <p>The list is basically of 2 types,
-                    <span class="component_description">Basic lists</span> and 
-                    <span class="component_description">Stacked lists</span> 
-                </p>
-                <h3 class="component_heading">Basic Lists</h3>
-                <div class="component_wrapper_box flex  flex-center flex-list">
-                    <ul>
-                        <li>Item-1</li>
-                        <li>Item-2</li>
-                        <li>Item-3</li>
-                    </ul>
-                    <ul class="list-circle">
-                        <li>Item-1</li>
-                        <li>Item-2</li>
-                        <li>Item-3</li>
-                    </ul>
-                    <ul class="list-none">
-                        <li>Item-1</li>
-                        <li>Item-2</li>
-                        <li>Item-3</li>
-                    </ul>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-circle%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253EItem-1%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-2%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        class="list-iframe";
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3 class="component_heading">List with checkbox & Radio</h3>
-                <div class="component_wrapper_box flex  flex-center flex-list">
-                    <ul class="list-none">
-                        <li>
-                            <input type="checkbox" name="" id="checkbox-list-item1">
-                            <label for="checkbox-list-item1">Item 1</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" id="checkbox-list-item1">
-                            <label for="checkbox-list-item1">Item 2</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="" id="checkbox-list-item1">
-                            <label for="checkbox-list-item1">Item 3</label>
-                        </li>
-                    </ul>
-
-                    <ul class="list-none">
-                        <li>
-                            <input type="radio" name="radio-list" id="radio-list-item1">
-                            <label for="radio-list-item1">Item 1</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio-list" id="radio-list-item2">
-                            <label for="radio-list-item2">Item 2</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="radio-list" id="radio-list-item3">
-                            <label for="radio-list-item3">Item 3</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item1%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item2%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522%2522%2520id%253D%2522checkbox-item3%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%253C%252Ful%253E%250A%250A%253Cul%2520class%253D%2522list-none%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item1%2522%253EItem%25201%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item2%2522%253EItem%25202%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio-list%2522%2520id%253D%2522radio-item3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-item3%2522%253EItem%25203%253C%252Flabel%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        class="list-iframe-2"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3 class="component_heading">Stacked List</h3>
-                <div class="component_wrapper_box flex flex-column flex-center">
-                    <ul class="list-none">
-                        <li class="stack-item flex flex-center">
-                            <p class="list-item-content">Click the link</p>
-                            <a class="btn btn-link" href="">view</a>
-                        </li>
-                        <li class="stack-item flex flex-center">
-                            <p class="list-item-content">Click the link</p>
-                            <a class="btn btn-link" href="">view</a>
-                        </li>
-                        <li class="stack-item flex flex-center">
-                            <p class="list-item-content">Click the link</p>
-                            <a class="btn btn-link" href="">view</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-stack%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stack-item%2520flex%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522list-item-content%2522%253EClick%2520the%2520link%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-link%2522%2520href%253D%2522%2522%253Eview%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
-                        class="list-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-
-        <!--Modal-->
-            <div  class="component_wrapper ">
-                <h2 class="component_heading">Modal</h2>
-
-                <div class="component_wrapper_box flex-center ">
-                    <div >
-                        <button id="openModal" class="btn btn-round">Toggle Modal</button>
-                        <div id="myModal" class="modal">
-                            <div class="modal-box">
-                                <div class="modal-content">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Ducimus amet, adipisci sit placeat ipsam fugit quis ut ad illo
-                                        omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
-                                    </p>
-                                    <button id="closeModal" class="btn btn-primary btn-modal">close</button>
-                                </div>
-                            </div>
+                <!-- Rating  -->
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Rating</h2>
+                    <p>A star rating is a popular rating scale used to leave feedback regarding the quality of products, services, and experiences. 
+                    </p>
+                    <div class="component_wrapper_box">
+                        <div class="rating flex flex-center">
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text"></label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text"></label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text"></label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text"></label>
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text"></label> 
                         </div>
                     </div>
-                </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cbutton%2520id%253D%2522openModal%2522%2520class%253D%2522btn%2520btn-round%2522%253EToggle%2520Modal%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E...%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-primary%2520btn-modal%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        class="modal-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-                <script src="./components/modal/modal.js" ></script>
-            </div>
-        <!--Rating-->
-            <div class="component_wrapper">
-                <h2 class="component_heading">Rating</h2>
-                <p>A star rating is a popular rating scale used to leave feedback regarding the quality of products, services, and experiences. 
-                </p>
-                <div class="component_wrapper_box">
-                    <div class="rating flex">
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text"></label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text"></label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text"></label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text"></label>
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text"></label> 
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520flex%2520flex-center%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rate%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star1%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rate%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star2%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rate%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star3%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rate%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star4%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rate%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star5%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%2520%250A%253C%252Fdiv%253E"
+                            class="rating-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520flex%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rate%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star1%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rate%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star2%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rate%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star3%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rate%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star4%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rate%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522star5%2522%2520title%253D%2522text%2522%253E%253C%252Flabel%253E%2520%250A%253C%252Fdiv%253E"
-                        class="rating-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
+    <script src="/components/modal/modal.js"></script>
     
 </body>
 </html>

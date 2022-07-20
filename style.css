@@ -1,90 +1,13 @@
-@import url(./general-layout.css);
-@import url(./components/component-styles.css);
-
-html {
-    --blue-background: #93c5fd;
-    --white: #fff;
-    --black: #000;
-    --blue: #0000ff;
-    --off-white: #ccc;
-    --bg-highlight: #d6f3ee;
-    --text-primary: #111B27;
-    --text-secondary:#616161 ;
-    --bg-color-hover: #dfdede;
-    --bg-color: #f6f6f6;
-    --bg-primary: #b2d3f7;
-    --bg-secondary: #bab6b6;
-    --bg-success: #b2f7b8;
-    --bg-danger: #f78080;
-    --text-danger: #ff2a2a;
-    --bg-info: #cfdae6;
-    --bg-warning: #eaf7b2;
-    --text-warning: #81ad29;
-    --bg-badge: #f81010;
-    --bg-online: rgb(64, 206, 64);
-    --bg-offline: #e42727;
-    --bg-border: #888888;
-    --bg-modal: #fefefe ;
-    --black-modal: rgba(0,0,0,0.4);
-    font-family: roboto, sans-serif;
-
-    scroll-behavior: smooth;
-}
-
+@import url("/general-layout.css");
+@import url("/utilities/utilities.css");
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.component_wrapper{
-    margin: 2rem;
-    line-height: 1.5rem;
+html {
+    font-family: roboto, sans-serif;
+    scroll-behavior: smooth;
 }
-
-.flex {
-    display: flex;
-}
-
-.flex-column{
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-end{
-    justify-content: flex-end;
-}
-
-.component_heading {
-    color: var(--text-primary);
-    padding: 2rem 0;
-    text-transform: capitalize;
-}
-
-.component_wrapper_box{
-    padding: 1.5rem;
-    border: 1px solid transparent;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    background-color: var(--bg-color);
-    word-wrap: break-word;
-}
-
-.component_description{
-    font-style: italic;
-    font-weight: 600;
-}
-
-.component_iframe {
-    margin-top: 4rem;
-    overflow: auto;
-    background-color: #011627;
-    text-align: center;
-    width: 100%;
-}
-

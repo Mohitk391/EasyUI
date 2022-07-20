@@ -1,31 +1,26 @@
 .textarea{
-    display: block;
-    padding: 1rem;
-    font-size: 1rem;
+    height: 5rem;
+    width: 20rem;
 }
 
 .input{
     height: 2rem;
-    width: 20rem;
+    width: 15rem;
     border: 1px solid var(--text-secondary);
 }
 
 .input:focus{
-    border: 1px solid var(--text-primary);
+    outline-color:var(--text-primary)
 }
 
 .input-error{
     height: 2rem;
-    width: 20rem;
-    border: 1px solid var(--bg-danger);
+    width: 15rem;
+    border: 1px solid var(--text-danger);
 }
+
 .input-error:focus{
-    border: 1px solid var(--bg-danger);
-}
-
-
-label{
-    color: var(--bg-secondary);
+    outline-color: var(--bg-danger);
 }
 
 .input-iframe{

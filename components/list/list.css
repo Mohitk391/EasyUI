@@ -1,5 +1,5 @@
 .flex-list{
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .list-circle{
@@ -10,9 +10,6 @@
     list-style: none;
 }
 
-.list-check label{
-    color: var(--black);
-}
 .stack-item{
     border: 1px solid var(--bg-secondary);
     margin-bottom: 0.3rem;

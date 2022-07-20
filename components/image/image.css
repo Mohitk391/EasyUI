@@ -1,5 +1,11 @@
+.reponsive-image-container {
+    background-size: contain;
+}
+
 .reponsive-image {
-    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .round-image{

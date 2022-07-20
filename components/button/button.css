@@ -1,47 +1,40 @@
-.btn-flex {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 .btn {
-    position: relative;
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.2rem;
+    padding: 0.7rem;
+    font-size: 1rem;
     cursor: pointer;
+    border: none;
 }
 
 .btn-primary{
-    border-style: none;
     background-color: var(--bg-primary);
     color: var(--black);
 }
 
 .btn-secondary{
-    border-style: none;
     background-color: var(--bg-secondary);
     color: var(--black);
 }
 
 .btn-round {
     border-radius: 1rem;
-    border-style: none;
     background-color: var(--bg-danger);
 }
 
 .btn-link {
-    border: none;
     color: var(--blue);
     text-decoration: underline;
     background-color:  var(--bg-color);
 }
 .btn-hover{
-    border: none;
-    background-color: var(--bg-highlight);
+    background-color: var(--bg-secondary);
+    border-radius: 1rem;
 }
 
 .btn-hover:hover {
-    background-color: var(--bg-color-hover);
+    background-color: var(--text-primary);
+    color: var(--white); 
+    transition: 0.5s ease;
+    box-shadow: 0 6px 10px 0 var(--box-shadow);
 }
 
 .btn-disabled {
@@ -72,6 +65,8 @@
 .btn-outline-hover:hover {
     border: 2px solid var(--black);
     color: var(--black);
+    transition: 0.2s ease;
+    box-shadow: 0 6px 10px 0 var(--box-shadow);
 }
 
 .btn-outline-disabled {
@@ -80,44 +75,25 @@
 }
 
 .btn-floating-action{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%; 
-    border-style: none;
+    border-radius: 100%; 
     background-color: var(--bg-primary);
-    color: var(--text-primary);
-    aspect-ratio: 1;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-floating-action img {
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
 .btn-floating-action:hover{
 transition: 0.2s ease;
-box-shadow: 0 6px 10px 0 #929191;
+box-shadow: 0 6px 10px 0 var(--box-shadow);
 }
 
 .btn-icon {
-    font-size: 1rem;
     padding: 0 1rem;
     width: fit-content;
-    display: flex; 
-    align-items: center;
-    gap: 0.4rem;
     background-color: var(--bg-info);
-    border-style: none;
     color: var(--black);
 }
-.btn-icon img {
-    display: inline;
-    width: 1.75rem;
-}
 
+.btn-icon-text{
+    margin: 0 0.5rem 0 0;
+}
 .button-iframe {
     width: 50rem; 
     height: 12.25rem; 

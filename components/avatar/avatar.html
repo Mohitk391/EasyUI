@@ -4,98 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="avatar.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
     <link href="/style.css" rel="stylesheet">
     <title>EasyUI / Avatar</title>
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="nav-bar-logo" href="/index.html">EASY UI</a>
-        <a class="social-link" href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><img src="/assets/github-icon.svg" alt="github"></a>
-        <a class="social-link" href="https://twitter.com/MohitPa88351529"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
-    </nav>
-    <div class="grid-container">
-        <aside class="sidebar">
-            <h3 class="sidebar-heading">Installation</h3>
-            <div class="sidebar-item">
-                <a class="component-link" href="/installation.html">Get started</a>
+    <div class="page-layout">
+        <nav class="navbar">
+            <a href="/index.html" class="logo">EASY UI</a>
+            <div class="external-links">
+                <a href="https://github.com/Mohitk391/easyUI-component-library/tree/dev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MohitPa88351529"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
-            <h3 class="sidebar-heading">Components</h3>
-            <ul>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/alert/alert.html">Alert</a>
-                </li>
-                <li class="sidebar-item sidebar-item-active">
-                    <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/badge/badge.html">Badge</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/button/button.html">Button</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/card/card.html">Card</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/image/image.html">Image</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/input/input.html">Input</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/list/list.html">List</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/modal/modal.html">Modal</a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="component-link" href="/components/rating/rating.html">Rating</a>
-                </li>
-            </ul>
-        </aside>
-        <div class="components">
-            <div class="component_wrapper">
-                <h2 class="component_heading">Avatar</h2>
-                <p>
-                    The avatar component has basic 5 sizes,
-                    <span class="component_description">avatar-xl</span>, 
-                    <span class="component_description">avatar-lg</span>,
-                    <span class="component_description">avatar-md</span>,
-                    <span class="component_descriptiont">avatar-sm</span>,
-                    <span class="component_description">avatar-xs</span>, 
-                    and by using <span class="component_description">round</span> we can have round avatars and <span class="component_description">square</span> for square avatars.
-                </p>
-                <h3 class="component_heading">Standard Avatars</h3>
-                <div class="component_wrapper_box">
-                    <div class="avatar_flex flex">
-                        <span class="avatar avatar-xl">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
-                        </span>
-                        <span class="avatar avatar-lg">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
-                        </span>
-                        <span class="avatar avatar-md">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
-                        </span>
-                        <span class="avatar avatar-sm">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar" class="square"/>
-                        </span>
-                        <span class="avatar avatar-xs">
-                            <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
-                        </span>
+        </nav>
+        <div class="main-body">
+            <aside class="sidebar">
+                <h3 class="sidebar-heading">Installation</h3>
+                <div class="sidebar-item">
+                    <a class="component-link" href="/installation.html">Get started</a>
+                </div>
+                <h3 class="sidebar-heading">Components</h3>
+                <ul>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/alert/alert.html">Alert</a>
+                    </li>
+                    <li class="sidebar-item sidebar-item-active">
+                        <a class="component-link" href="/components/avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/badge/badge.html">Badge</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/button/button.html">Button</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/card/card.html">Card</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/image/image.html">Image</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/input/input.html">Input</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/list/list.html">List</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/modal/modal.html">Modal</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="component-link" href="/components/rating/rating.html">Rating</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="component_wrapper">
+                    <h2 class="component_heading">Avatar</h2>
+                    <p>
+                        The avatar component has basic 5 sizes,
+                        <span class="component_description">avatar-xl</span>, 
+                        <span class="component_description">avatar-lg</span>,
+                        <span class="component_description">avatar-md</span>,
+                        <span class="component_descriptiont">avatar-sm</span>,
+                        <span class="component_description">avatar-xs</span>, 
+                        and by using <span class="component_description">round</span> we can have round avatars and <span class="component_description">square</span> for square avatars.
+                    </p>
+                    <h3 class="component_heading">Standard Avatars</h3>
+                    <div class="component_wrapper_box">
+                        <div class="avatar_flex flex">
+                            <span class="avatar avatar-xl">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="round" />
+                            </span>
+                            <span class="avatar avatar-lg">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                            </span>
+                            <span class="avatar avatar-md">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="square"/>
+                            </span>
+                            <span class="avatar avatar-sm">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar" class="square"/>
+                            </span>
+                            <span class="avatar avatar-xs">
+                                <img src="/assets/avatar_sample.jpg" alt="avatar"  class="round"/>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="component_iframe">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
+                            class="avatar-iframe"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
                 </div>
-
-                <div class="component_iframe">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cspan%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522square%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522round%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E"
-                        class="avatar-iframe"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
 </body>
 </html>
