@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy UI - Input</title>
+    <title>EasyUI - Toast</title>
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
-    <link href="/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="page-layout">
@@ -39,7 +39,7 @@
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/image/image.html">Image</a>
                 </li>
-                <li class="sidebar-item sidebar-item-active">
+                <li class="sidebar-item">
                     <a class="component-link" href="/components/input/input.html">Input</a>
                 </li>
                 <li class="sidebar-item">
@@ -57,7 +57,7 @@
                 <li class="sidebar-item">
                     <a class="component-link" href="/components/typography/typography.html">Typography</a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item sidebar-item-active">
                     <a class="component-link" href="/components/toast/toast.html">Toast/Snackbar</a>
                 </li>
                 <li class="sidebar-item">
@@ -67,44 +67,21 @@
             </aside>
             <main class="main">
                 <div class="component_wrapper">
-                    <h2 class="component_heading">Input</h2>
-                    <p>The input is basically of 2 types,
-                        <span class="component_description">Textbox Input</span> and 
-                        <span class="component_description">Input box input</span> 
+                    <h2 class="component_heading">Toast / Snackbar</h2>
+                    <p>
+                        Toast / Snackbars are popups which are shown at the bottom of the screen to show a message.
                     </p>
-                    <h3 class="component_heading">Textbox Input</h3>
+                    <h3 class="component_heading">Toast</h3>
+                
                     <div class="component_wrapper_box">
-                        <form class="flex flex-column flex-center">
-                            <textarea class="textarea" name="textarea" placeholder="We can add more information here as compared to simple text input."  minlength="10" required></textarea>
-                            <button class="btn btn-primary">Submit</button>
-                        </form>
+                        <button id="btnToast" class="btn btn-hover">Show Toast</button>
                     </div>
-    
-                    <div class="component_iframe">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522textarea%2522%2520name%253D%2522textarea%2522%2520cols%253D%252230%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522We%2520can%2520add%2520more%2520information%2520here%2520as%2520compared%2520to%2520simple%2520text%2520input.%2522%2520%2520minlength%253D%252210%2522%2520required%253E%253C%252Ftextarea%253E"
-                            class="input-iframe"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-    
-                    <h3 class="component_heading">Input box</h3>
-                    <div class="component_wrapper_box flex flex-column flex-center">
-                        
-                            <label>Normal Input: </label>
-                            <input class="input" type="text"/>
-                        
-                            <label>Input Error: </label>
-                            <input class="input-error" type="text" />
 
-                            <label>Password: </label>
-                            <input class= "input" type="password" />
-                    </div>
-    
+                    <div id="toast">Toast message appears here... <i class="fa fa-times-circle-o" id="hideToast" aria-hidden="true"></i></div>
                     <div class="component_iframe">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=800&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=13.5px&lh=181%25&si=false&es=2x&wm=false&code=%253Clabel%253ENormal%2520Input%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2522input%2522%2520type%253D%2522text%2522%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%253Clabel%253EInput%2520Error%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2522input-error%2522%2520type%253D%2522text%2522%2520%252F%253E%250A%250A%253Clabel%253EPassword%253A%2520%253C%252Flabel%253E%250A%253Cinput%2520class%253D%2520%2522input%2522%2520type%253D%2522password%2522%253E"
-                            class="input-iframe"
+                            src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=45px&ph=47px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522btnToast%2522%2520class%253D%2522btn%2520btn-hover%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%250A%253Cdiv%2520id%253D%2522toast%2522%253E%250A%2520%2520Toast%2520message%2520appears%2520here...%2520%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times-circle-o%2522%2520id%253D%2522hideToast%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                            class="toast-iframe"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
@@ -112,5 +89,6 @@
             </main>
         </div>
     </div>
+    <script src="toast.js" ></script>
 </body>
 </html>
