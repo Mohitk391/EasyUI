@@ -75,3 +75,11 @@
     display: block;
     text-align: center;
 }
+
+.typography-iframe{
+    width: 36.125rem; 
+    height: 17.813rem; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
